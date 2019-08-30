@@ -1,19 +1,19 @@
 ---
 title: Java的数据类型
-date: 2019-06-11 20:28:43
-categories: [Java]
-tags: [Java]
+date: 2019-06-11T23:00:23+08:00
+categories: ["Java"]
+tags: ["Java"]
 ---
 
 > 真正了不起的程序员对自己的程序的每一个字节都了如指掌
 
-# 一、数据在计算机中是如何储存的？
+## 一、数据在计算机中是如何储存的？
 
 ### 1、字节和字节码
 
 byte是计算机最小的存储单位，一个byte里分了8个"小格子",每个小格子称作bit。比如 
 
-```
+```angular2
 int i = 0
 ```
 
@@ -29,7 +29,7 @@ char c =65
 
 虽然二进制存储的内容都是一样的 0100 0001 ，由于类型不同他们会以不同的方式所解释，
  
-```
+```angular2
 short s = 65;
 char c =65;
 System.out.println("c = " + c); //c=A
@@ -40,7 +40,7 @@ System.out.println("s = " + s); //s=65
 
 计算机的内容只能存0和1的数据，将这样的数据解释成A，这样的表叫ASCII码表
  
-# 二、基本数据类型
+## 二、基本数据类型
 
 在Java中，有两种数据类型：原生数据、引用数据
 
@@ -62,14 +62,14 @@ System.out.println("s = " + s); //s=65
 0.1+0.2=0.000000000000034
 因此不能以浮点数进行相等的操作
 
-```
+```angular2
 float i = 0.1f;
 if(i==0.1f){
 }
 
 ```
 解决方案可以这样，比较大小
-```
+```angular2
 if(Maths.abs(d-1)<0.0000001){
   //因此可以说明浮点数d和1相等
 }
@@ -87,16 +87,16 @@ if(Maths.abs(d-1)<0.0000001){
 
 引用数据类型在java.lang里都有一个特定的类，否则就是原生数据类型
 
-# 三、类型转换与类型提升
+## 三、类型转换与类型提升
 
 ### 1、低精度转化为高精度没有问题
-```
+```angular2
 byte b = 100;
 int i = b;
 ```
 
 ### 2、高精度转化为低精度需要类型转化(会损失数据)
-```
+```angular2
 int i =130;
 byte c = (byte)i;
 System.out.println("c = " + c);//c=-126
@@ -104,7 +104,7 @@ System.out.println("c = " + c);//c=-126
 
 ### 3、除数
 
-```
+```angular2
 divide(5,3);
 public static double divide(int a ,int b){
     int result = a / b ; 
@@ -115,7 +115,7 @@ public static double divide(int a ,int b){
 ```
 如果类型不同进行操作，需要把类型提高最高的精度。
 
-```
+```angular2
 divide(5,3);
 public static double divide(int a ,int b){
      double result = (double)a / b ;

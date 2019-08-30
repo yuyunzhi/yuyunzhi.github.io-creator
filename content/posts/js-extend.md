@@ -1,8 +1,8 @@
 ---
 title: JS中的继承
-date: 2018-11-21 13:54:08
-categories: [JavaScript]
-tags: [JavaScript]
+date: 2018-07-20T23:00:23+08:00
+categories: ["JavaScript"]
+tags: ["JavaScript"]
 ---
 
 - 什么是继承？继承就是子类拥有父类的各种属性和方法
@@ -13,7 +13,7 @@ tags: [JavaScript]
  
 - 如何让子类拥有父类的属性和方法？
 
-```
+```angular2
 //原理
 子类('参数'){
     父类.call(this,'参数')
@@ -25,11 +25,11 @@ tags: [JavaScript]
 
 分为ES5和ES6的写法以及两者的区别。
 
-# 一、ES5中如何完成JS的继承？
+## 一、ES5中如何完成JS的继承？
 
-## 1、声明一个父类函数，父类函数有一个name的属性和run()的方法
+### 1、声明一个父类函数，父类函数有一个name的属性和run()的方法
 
-```
+```angular2
 function Human(name){
      this.name = name
  }
@@ -39,9 +39,9 @@ Human.prototype.run = function(){
  }
 ```
 
-## 2、声明一个子类函数，并从父类函数中继承属性
+### 2、声明一个子类函数，并从父类函数中继承属性
 
-```
+```angular2
 function Man(name){
      Human.call(this, name) //是Human的属性
      this.gender = '男' //是自己的属性
@@ -53,16 +53,16 @@ Man.prototype.fight = function(){
  
 注意，Human.call(this, name)就是从父类继承属性，这句代码很重要
 
-## 3、从父类函数继承方法
+### 3、从父类函数继承方法
 
-```
+```angular2
 //添加一句这样的代码就可以了
 Man.prototype.__proto__=Human.prototype
 ```
 
 然而IE不兼容这个代码所以要换另一种方式
 
-```
+```angular2
 var f = function(){}
 f.prototype = Human.prototype
 Man.prototype = new f()
@@ -78,9 +78,9 @@ this._proto__=f.prototype
 return 上一行述结果
 所以需要声明一个空的函数f。
 
-# 二、ES6中如何完成JS的继承？
+## 二、ES6中如何完成JS的继承？
 
-```
+```angular2
 class Human{
      constructor(name){
          this.name = name
@@ -102,6 +102,6 @@ class Human{
 ```
 从ES5改成ES6逻辑其实是一样的，只是写法换了一下。其中用关键字extends来继承父类，用super来call一下父类获得父类的属性。
 
-# 三、ES5与ES6写法的优劣？
+## 三、ES5与ES6写法的优劣？
 
 - ES5的写法可以更直观的看清楚内存的变化，同时可以在方法中增加属性。而ES6的写法不能在方法中增加属性，暂时不支持。
