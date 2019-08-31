@@ -46,7 +46,7 @@ defaultContentLanguageInSubdir = false
     weight = 20
   [[menu.main]]
     name = "CV"
-    url = "/cv/"
+    url = "/resume/"
     weight = 30
   [[menu.main]]
     name = "RSS"
