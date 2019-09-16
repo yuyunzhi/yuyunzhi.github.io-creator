@@ -45,7 +45,7 @@ defaultContentLanguageInSubdir = false
     url = "/contacts/"
     weight = 20
   [[menu.main]]
-    name = "CV"
+    name = "About"
     url = "/resume/"
     weight = 30
   [[menu.main]]
