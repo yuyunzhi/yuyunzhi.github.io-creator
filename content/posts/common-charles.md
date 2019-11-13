@@ -33,7 +33,7 @@ License Key: 48891cf209c6d32bf4
 - Proxy -> Proxy Settings默认端口是8888，根据实际情况可修改。
 
 - 打开手机中的设置，所选wifi高级设置->代理（手动），配置代理服务器主机名（本机IP地址）-> 配置代理服务器端口（charles默认为8888）
-- 手机安装证（为了查看 https请求）：手机端连上电脑的代理后 ，浏览器访问SSL证书下载地址后直接安装：http://chls.pro/ssl。**证书下载地址也可在电脑端 Help->SSL Proxying—>Install Charles Root Certificate on a Mobile Device or Remote Brower 下查询确认，以此为准。** 手机端证书仅对一台PC有效，如要再其他PC端抓取https，需要连接对应的代理后再次安装证书。
+- 手机安装证（为了查看 https请求）：手机端连上电脑的代理后 ，浏览器访问SSL证书下载地址后直接安装：http://chls.pro/ssl。证书下载地址也可在电脑端 Help->SSL Proxying—>Install Charles Root Certificate on a Mobile Device or Remote Brower 下查询确认，以此为准。 手机端证书仅对一台PC有效，如要再其他PC端抓取https，需要连接对应的代理后再次安装证书。
 - 
 
 ## 四、抓包
