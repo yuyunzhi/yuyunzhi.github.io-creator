@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ae5092e-eedf-4391-bb83-322692a5ccf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/algorithm/hnt.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/algorithm/3.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/posts/algorithm-recursion.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/algorithm-recursion.md" afterDir="false" />
     </list>
@@ -45,32 +45,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/algorithm-recursion.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="545">
-                <caret line="69" column="60" lean-forward="true" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/posts/algorithm-complexity.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="293">
-                <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="34" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/posts/algorithm-array.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="6555">
-                <caret line="285" column="10" selection-start-line="285" selection-start-column="10" selection-end-line="285" selection-end-column="10" />
+              <first_editor relative-caret-position="514">
+                <caret line="128" column="13" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -163,9 +139,9 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="56" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="60" />
+    <option name="y" value="87" />
     <option name="width" value="1624" />
     <option name="height" value="1027" />
   </component>
@@ -214,19 +190,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/algorithm" />
-      <recent name="$PROJECT_DIR$/static/resume" />
-      <recent name="$PROJECT_DIR$/static/article" />
-      <recent name="$PROJECT_DIR$/content/posts" />
-      <recent name="$PROJECT_DIR$/content" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/algorithm" />
       <recent name="$PROJECT_DIR$/static/article" />
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/static/images/my" />
       <recent name="$PROJECT_DIR$/static/images/lambert-self" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/algorithm" />
+      <recent name="$PROJECT_DIR$/static/resume" />
+      <recent name="$PROJECT_DIR$/static/article" />
+      <recent name="$PROJECT_DIR$/content/posts" />
+      <recent name="$PROJECT_DIR$/content" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -280,12 +256,14 @@
       <workItem from="1573729599179" duration="1366000" />
       <workItem from="1573813865825" duration="1048000" />
       <workItem from="1574039269186" duration="15000" />
-      <workItem from="1574043945828" duration="3247000" />
+      <workItem from="1574043945828" duration="3636000" />
+      <workItem from="1574142098170" duration="1382000" />
+      <workItem from="1574217347589" duration="7170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110949000" />
+    <option name="totallyTimeSpent" value="119890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -297,7 +275,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="23" width="1624" height="1027" extended-state="6" />
+    <frame x="60" y="87" width="1624" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -731,21 +709,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/algorithm-array.md">
+    <entry file="file://$PROJECT_DIR$/content/posts/algorithm-complexity.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="6555">
-            <caret line="285" column="10" selection-start-line="285" selection-start-column="10" selection-end-line="285" selection-end-column="10" />
+          <first_editor relative-caret-position="460">
+            <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="34" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/algorithm-complexity.md">
+    <entry file="file://$PROJECT_DIR$/content/posts/algorithm-array.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="293">
-            <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="34" />
+          <first_editor relative-caret-position="613">
+            <caret line="285" column="10" selection-start-line="285" selection-start-column="10" selection-end-line="285" selection-end-column="10" />
           </first_editor>
           <second_editor />
         </state>
@@ -754,8 +732,8 @@
     <entry file="file://$PROJECT_DIR$/content/posts/algorithm-recursion.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="545">
-            <caret line="69" column="60" lean-forward="true" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
+          <first_editor relative-caret-position="514">
+            <caret line="128" column="13" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>

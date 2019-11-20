@@ -16,10 +16,9 @@ tags: ["算法"]
 - 解决最小子问题是指可以直接得到答案问题并不需递归计算
 - 递归终止退出条件
 
-
 ### 递归举例
 
-##### 1、菲波那切数列
+#### 1、菲波那切数列
 
 - 基本情况 ： F(0) = 0, F(1) = 1 ,F(2) = F(0) + F(1) = 1
 - 递归规则 ： F(n) = F(n-1) + F(n-2)
@@ -37,8 +36,7 @@ tags: ["算法"]
 
 后面用动态规划的方法或记忆搜索的方式来优化重复计算的代码。
 
-
-##### 2、汉诺塔
+#### 2、汉诺塔
 
 ![汉诺塔](/algorithm/hnt.jpeg)
 
@@ -69,3 +67,71 @@ public void MoveHanoi(int n,char origin,char destination,char buffer){
 
 - **回溯法步骤**：针对所给问题，确定问题的解空间：首先应明确定义问题的解空间，问题的解空间应至少包含问题的一个（最优）解。确定结点的扩展搜索规则以深度优先方式搜索解空间，并在搜索过程中用剪枝函数避免无效搜索。
 
+#### 1、回溯法模板
+
+- 给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。说明：解集不能包含重复的子集
+- 输入： nums = [1,2,3]
+- 输出：[ [3], [1], [2], [1,2,3], [1,3], [2,3],[1,2], [] ]
+
+```angular2
+public List<List<Integer>> subsets(int[] nums){
+    // result 为解集空间
+    List<List<Integer>> result = new ArrayList<List<Integer>>();
+    if(nums == null || nums.length ==0){
+        return result;
+    }
+    // list为单一解
+    List<Integer> list = new ArrayList<Integer>();
+    Arrays.sort(nums);
+    // 递归函数subsetHelp
+    subsetHelp(result,list,nums,0);
+    return result;
+}
+
+private void subsetHelp(List<List<Integer>> result,List<Integer>list,int[] nums,int pos){
+    result.add(new ArrayList<Integer>(list));
+    for(int i = pos;i<nums.length;i++){
+        list.add(nums[i]);
+        subsetHelp(result,list,nums,i+1);
+        list.remove(list.size()-1);
+    }
+}
+```
+
+
+**subsetHelp的for循环逻辑**：nums=[1,2,3],对nums循环每一次循环取出1个数，然后包含该数所有的子集。取完后取第N个数，然后包含该数（排除第前N个数）的所有子集。
+
+![图字描述](/algorithm/3.jpeg)
+
+
+#### 2、求子集
+
+- 给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。
+- 说明：解集不能包含重复的子集
+- 输入: [1,2,2]
+- 输出: [ [2], [1], [1,2,2], [2,2], [1,2], [] ]
+
+```angular2
+public List<List<Integer>> subsets(int[] nums){
+    List<List<Integer>> result = new ArrayList<List<Integer>>();
+    if(nums == null || nums.length ==0){
+        return result;
+    }
+    List<Integer> list = new ArrayList<Integer>();
+    Arrays.sort(nums);
+    subsetHelp(result,list,nums,0);
+    return result;
+}
+
+private void subsetHelp(List<List<Integer>> result,List<Integer>list,int[] nums,int pos){
+    result.add(new ArrayList<Integer>(list));
+    for(int i = pos;i<nums.length;i++){
+        if(i != pos && nums[i] == nums[i-1]){
+            continue;
+        }
+        list.add(nums[i]);
+        subsetHelp(result,list,nums,i+1);
+        list.remove(list.size()-1);
+    }
+}
+```
