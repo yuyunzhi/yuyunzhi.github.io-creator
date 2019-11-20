@@ -101,7 +101,7 @@ private void subsetHelp(List<List<Integer>> result,List<Integer>list,int[] nums,
 
 **subsetHelp的for循环逻辑**：nums=[1,2,3],对nums循环每一次循环取出1个数，然后包含该数所有的子集。取完后取第N个数，然后包含该数（排除第前N个数）的所有子集。
 
-![图字描述](/algorithm/3.jpeg)
+![图解](/algorithm/3.jpeg)
 
 
 #### 2、求子集
@@ -135,3 +135,80 @@ private void subsetHelp(List<List<Integer>> result,List<Integer>list,int[] nums,
     }
 }
 ```
+
+#### 3、全排列
+
+- 给定一个没有重复数字的序列，返回其所有可能的全排列。
+- 输入：[1,2,3]
+- 输出：[ [1,2,3], [1,3,2], [2,1,3], [2,3,1],[3,1,2], [3,2,1] ]
+
+
+```angular2
+public List<List<Integer>> subsets(int[] nums){
+    List<List<Integer>> result = new ArrayList<List<Integer>>();
+    if(nums == null || nums.length ==0){
+        return result;
+    }
+    List<Integer> list = new ArrayList<Integer>();
+    Arrays.sort(nums);
+    permuteHelper(result,list,nums);
+    return result;
+}
+
+private void permuteHelper(List<List<Integer>> result,List<Integer>list,int[] nums){
+   if(list.size() == nums.length){
+       result.add(new ArrayList<Integer>(list));
+   }
+    for(int i = 0;i<nums.length;i++){
+        if(list.contains(nums[i])){
+            continue;
+        }
+        list.add(nums[i]);
+        permuteHelper(result,list,nums);
+        list.remove(list.size()-1);
+    }
+}
+```
+
+#### 3、组合总和
+
+- 给定一个无重复元素的数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。
+
+```angular2
+public List<List<Integer>> subsets(int[] candidates,int target){
+    List<List<Integer>> result = new ArrayList<List<Integer>>();
+    if(candidates == null || candidates.length ==0){
+        return result;
+    }
+    List<Integer> list = new ArrayList<Integer>();
+    Arrays.sort(candidates);
+    helper(result,list,candidates,target,0);
+    return result;
+}
+
+private void helper(List<List<Integer>> result,List<Integer>list,int[] candidates,int target,int pos){
+   if(target==0){
+       result.add(new ArrayList<Integer>(list));
+       return;
+   }else if(target < 0){
+       return;
+   }
+    for(int i = pos;i<candidates.length;i++){
+        list.add(candidates[i]);
+        helper(result,list,candidates,target-candidates[i],i);
+        list.remove(list.size()-1);
+    }
+}
+```
+
+
+
+### 递归+回溯法+剪枝总结
+
+- 初始化解集空间变量及类型 result
+- 初始化单一解变量及类型  list
+- 画图
+ 	- 根据图确定循环起始值
+ 	- 根据图确定添加结果条件、过滤某个循环条件、终止条件
+ 	- 根据上两点，确定递归参数
+- 套用回溯法模板

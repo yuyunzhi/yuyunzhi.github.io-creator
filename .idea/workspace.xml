@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ae5092e-eedf-4391-bb83-322692a5ccf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/algorithm/3.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/posts/algorithm-recursion.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/algorithm-recursion.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -45,8 +43,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/algorithm-recursion.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="514">
-                <caret line="128" column="13" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
+              <first_editor relative-caret-position="330">
+                <caret line="176" lean-forward="true" selection-start-line="176" selection-end-line="176" />
               </first_editor>
               <second_editor />
             </state>
@@ -140,8 +138,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="60" />
-    <option name="y" value="87" />
+    <option name="x" value="129" />
+    <option name="y" value="29" />
     <option name="width" value="1624" />
     <option name="height" value="1027" />
   </component>
@@ -258,12 +256,12 @@
       <workItem from="1574039269186" duration="15000" />
       <workItem from="1574043945828" duration="3636000" />
       <workItem from="1574142098170" duration="1382000" />
-      <workItem from="1574217347589" duration="7170000" />
+      <workItem from="1574217347589" duration="10742000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119890000" />
+    <option name="totallyTimeSpent" value="123462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -275,13 +273,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="87" width="1624" height="1027" extended-state="0" />
+    <frame x="129" y="29" width="1624" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.11603244" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.11603244" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.21176471" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.21176471" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50062346" side_tool="true" weight="0.2930481" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -732,8 +730,8 @@
     <entry file="file://$PROJECT_DIR$/content/posts/algorithm-recursion.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="514">
-            <caret line="128" column="13" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
+          <first_editor relative-caret-position="330">
+            <caret line="176" lean-forward="true" selection-start-line="176" selection-end-line="176" />
           </first_editor>
           <second_editor />
         </state>
