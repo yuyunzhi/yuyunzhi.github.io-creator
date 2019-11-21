@@ -10,15 +10,15 @@ tags: ["算法"]
 - 在数学和计算机科学中，递归指由一种（或多种）简单的基本情况定义的一类对象或方法，并规定其他所有情况都能被还原为其基本情况。
 - 递归指在函数的定义中使用函数自身的方法
 
-### 递归三要素
+# 二、递归三要素
 
 - 拆解寻找子问题（得到递归规则）
 - 解决最小子问题是指可以直接得到答案问题并不需递归计算
 - 递归终止退出条件
 
-### 递归举例
+# 三、递归举例
 
-#### 1、菲波那切数列
+### 1、菲波那切数列
 
 - 基本情况 ： F(0) = 0, F(1) = 1 ,F(2) = F(0) + F(1) = 1
 - 递归规则 ： F(n) = F(n-1) + F(n-2)
@@ -36,7 +36,7 @@ tags: ["算法"]
 
 后面用动态规划的方法或记忆搜索的方式来优化重复计算的代码。
 
-#### 2、汉诺塔
+### 2、汉诺塔
 
 ![汉诺塔](/algorithm/hnt.jpeg)
 
@@ -46,6 +46,7 @@ tags: ["算法"]
 
 - 递归函数：MoveHanoi(int n, char origin, char destination, char buffer)  n表示n个盘子,origin表示出发的地方，destination表示目的地,buffer表示缓存的地方。这三个char分别代表着三根杆子
 
+**代码**：
 
 ```angular2
 public void MoveHanoi(int n,char origin,char destination,char buffer){
@@ -59,7 +60,7 @@ public void MoveHanoi(int n,char origin,char destination,char buffer){
 }
 ```
 
-### 回溯法
+# 四、回溯法
 
 - **什么是回溯法**：回溯法是一种选优搜索法，按选优条件向前搜索，以达到目标。但当探索到某一步时，发现原先选择并不优或达不到目标，就退。回一步重新选择，这种走不通就退回再走的技术为回溯法。满足回溯条件的某个状态的点称为“回溯点”。
 
@@ -67,11 +68,13 @@ public void MoveHanoi(int n,char origin,char destination,char buffer){
 
 - **回溯法步骤**：针对所给问题，确定问题的解空间：首先应明确定义问题的解空间，问题的解空间应至少包含问题的一个（最优）解。确定结点的扩展搜索规则以深度优先方式搜索解空间，并在搜索过程中用剪枝函数避免无效搜索。
 
-#### 1、回溯法模板
+### 1、回溯法模板
 
-- 给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。说明：解集不能包含重复的子集
+**题目**：给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。说明：解集不能包含重复的子集
 - 输入： nums = [1,2,3]
 - 输出：[ [3], [1], [2], [1,2,3], [1,3], [2,3],[1,2], [] ]
+
+**代码**：
 
 ```angular2
 public List<List<Integer>> subsets(int[] nums){
@@ -104,12 +107,14 @@ private void subsetHelp(List<List<Integer>> result,List<Integer>list,int[] nums,
 ![图解](/algorithm/3.jpeg)
 
 
-#### 2、求子集
+### 2、求子集
 
-- 给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。
-- 说明：解集不能包含重复的子集
+**题目**：给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。说明：解集不能包含重复的子集
+
 - 输入: [1,2,2]
 - 输出: [ [2], [1], [1,2,2], [2,2], [1,2], [] ]
+
+**代码**：
 
 ```angular2
 public List<List<Integer>> subsets(int[] nums){
@@ -138,10 +143,12 @@ private void subsetHelp(List<List<Integer>> result,List<Integer>list,int[] nums,
 
 #### 3、全排列
 
-- 给定一个没有重复数字的序列，返回其所有可能的全排列。
+**题目**：给定一个没有重复数字的序列，返回其所有可能的全排列。
+
 - 输入：[1,2,3]
 - 输出：[ [1,2,3], [1,3,2], [2,1,3], [2,3,1],[3,1,2], [3,2,1] ]
 
+**代码**：
 
 ```angular2
 public List<List<Integer>> subsets(int[] nums){
@@ -172,7 +179,9 @@ private void permuteHelper(List<List<Integer>> result,List<Integer>list,int[] nu
 
 #### 3、组合总和
 
-- 给定一个无重复元素的数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。
+**题目**：给定一个无重复元素的数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。
+
+**代码**：
 
 ```angular2
 public List<List<Integer>> subsets(int[] candidates,int target){
@@ -203,7 +212,7 @@ private void helper(List<List<Integer>> result,List<Integer>list,int[] candidate
 
 
 
-### 递归+回溯法+剪枝总结
+# 五、递归+回溯法+剪枝总结
 
 - 初始化解集空间变量及类型 result
 - 初始化单一解变量及类型  list

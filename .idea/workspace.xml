@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ae5092e-eedf-4391-bb83-322692a5ccf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/posts/algorithm-binary-search.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/algorithm/4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public" beforeDir="false" afterPath="$PROJECT_DIR$/public" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/algorithm-binary-search.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/algorithm-binary-search.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/algorithm-recursion.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/algorithm-recursion.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,8 +46,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/algorithm-recursion.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="517">
-                <caret line="135" column="1" selection-start-line="135" selection-start-column="1" selection-end-line="135" selection-end-column="1" />
+              <first_editor relative-caret-position="202">
+                <caret line="40" selection-start-line="40" selection-end-line="40" selection-end-column="27" />
               </first_editor>
               <second_editor />
             </state>
@@ -93,8 +94,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/algorithm-binary-search.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="549">
-                <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+              <first_editor relative-caret-position="434">
+                <caret line="358" lean-forward="true" selection-start-line="358" selection-end-line="358" />
               </first_editor>
               <second_editor />
             </state>
@@ -188,7 +189,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
+    <option name="x" value="257" />
     <option name="y" value="23" />
     <option name="width" value="1624" />
     <option name="height" value="1027" />
@@ -312,12 +313,12 @@
       <workItem from="1574039269186" duration="15000" />
       <workItem from="1574043945828" duration="3636000" />
       <workItem from="1574142098170" duration="1382000" />
-      <workItem from="1574217347589" duration="14383000" />
+      <workItem from="1574217347589" duration="20453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127103000" />
+    <option name="totallyTimeSpent" value="133173000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -329,12 +330,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="23" width="1624" height="1027" extended-state="0" />
+    <frame x="257" y="23" width="1624" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15970056" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15970056" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.21176471" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.21176471" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50062346" side_tool="true" weight="0.2930481" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -742,16 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/algorithm-recursion.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="517">
-            <caret line="135" column="1" selection-start-line="135" selection-start-column="1" selection-end-line="135" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/contacts.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -782,11 +774,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/algorithm-recursion.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="202">
+            <caret line="40" selection-start-line="40" selection-end-line="40" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/algorithm-binary-search.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="549">
-            <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <first_editor relative-caret-position="434">
+            <caret line="358" lean-forward="true" selection-start-line="358" selection-end-line="358" />
           </first_editor>
           <second_editor />
         </state>
