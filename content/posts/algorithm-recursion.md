@@ -1,5 +1,5 @@
 ---
-title: 递归 Recursion、回溯法Backtracking
+title: 递归 Recursion、回溯法 Backtracking
 date: 2019-11-03T23:00:23+08:00
 categories: ["算法"]
 tags: ["算法"]
