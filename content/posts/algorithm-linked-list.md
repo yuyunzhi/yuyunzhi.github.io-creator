@@ -312,7 +312,78 @@ public ListNode getKthToLast(ListNode head,int n){
     }
 ```
 
+### 6、反转一个链表II
 
+**题目**：反转从位置 m 到 n 的链表，用一次遍历在原地完成反转给定。 m，n 满足以下条件：1 ≤ m ≤ n ≤ 列表长度。
+
+- 给定 1->2->3->4->5->NULL, m = 2 和 n = 4。返回 1->4->3->2->5->NULL 
+- 链接：https://leetcode-cn.com/problems/reverse-linked-list/solution/
+
+**代码**：
+
+```angular2
+public ListNode reverseBetween(ListNode head,int m,int n){
+
+        if(head == null || m>n){
+            return head;
+        }
+
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+        head = dummy;
+
+        for(int i = 1 ;i < m;i++){
+            if(head == null){
+                return null;
+            }
+            head = head.next;
+        }
+
+        ListNode premNode = head;
+        ListNode mNode = head.next;
+        ListNode nNode = mNode;
+        ListNode postnNode = mNode.next;
+
+        for(int i=m; i<n; i++){
+            if(postnNode==null){
+                return null;
+            }
+            ListNode temp = postnNode.next;
+            postnNode.next = nNode;
+            nNode = postnNode;
+            postnNode = temp;
+        }
+        mNode.next = postnNode;
+        premNode.next = nNode;
+        
+        return dummy.next;
+    }
+```
+
+### 7、交换相邻结点
+
+**题目**：给定一个链表，对每两个相邻的结点作交换并返回头节点。你的算法应该只使用额外的常数空间。不要修改列表中的值，只有节点本身可以更改。
+
+- 给定 1->2->3->4，你应该返回 2->1->4->3 
+- 链接：https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/
+
+**代码**：
+
+```angular2
+ public ListNode swapPairs(ListNode head){
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+        ListNode pre = dummy;
+        while(pre.next != null && pre.next.next != null){
+            ListNode first = pre.next , second = pre.next.next;
+            first.next = second.next;
+            second.next = first;
+            pre.next = second;
+            pre = first;
+        }
+        return dummy.next;
+    }
+```
 
 
 
