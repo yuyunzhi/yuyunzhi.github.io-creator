@@ -367,6 +367,14 @@ public ListNode reverseBetween(ListNode head,int m,int n){
 - 给定 1->2->3->4，你应该返回 2->1->4->3 
 - 链接：https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/
 
+**思路**：
+
+- 画图，使用 dummy :-1->1->2->3->4
+- 让1的 next 指向2的next
+- 让-1的 next 指向2
+- 让2的 next 指向1
+- 依次循环
+
 **代码**：
 
 ```angular2
@@ -384,6 +392,90 @@ public ListNode reverseBetween(ListNode head,int m,int n){
         return dummy.next;
     }
 ```
+
+### 8、两数相加
+
+**题目**：给定两个非空链表来代表两个非负数，位数按照逆序方式存储，它们的每个节点只存储单个数字。将这两数相加会返回一个新的链表。可以假设除了数字 0 之外，这两个数字都不会以零开头
+
+- 输入：(2 -> 4 -> 3) + (5 -> 6 -> 4) 输出：7 -> 0 -> 8 原因：342 + 465 = 807
+- 输入：(7 -> 1 -> 6) + (5 -> 9 -> 2) 输出：2 -> 1 -> 9 原因：617 + 295 = 912
+- 链接：https://leetcode-cn.com/problems/add-twonumbers/description/
+
+**代码**：
+
+```angular2
+ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        int carry = 0;
+        ListNode dummy = new ListNode(-1);
+        ListNode p = dummy;
+
+        while(l1 != null && l2 != null){
+            int val = (l1.value + l2.value + carry) % 10;
+            carry = (l1.value + l2.value + carry) / 10;
+            p = appendToTail(p,val);
+            l1 = l1.next;
+            l2 = l2.next;
+        }
+
+        while(l1 != null ){
+            int val = (l1.value + carry) % 10;
+            carry = (l1.value + carry) / 10;
+            p = appendToTail(p,val);
+            l1 = l1.next;
+        }
+
+        while(l2 != null ){
+            int val = (l2.value + carry) % 10;
+            carry = (l2.value + carry) / 10;
+            p = appendToTail(p,val);
+            l2 = l2.next;
+        }
+
+        if(carry != 0){
+            p.next = new ListNode(carry);
+        }
+
+        return dummy.next;
+    }
+
+    public ListNode appendToTail(ListNode head,int value){
+        head.next = new ListNode(value);
+        head = head.next;
+        return head;
+    }
+```
+
+### 9、删除排序链表中的重复元素 I
+
+**题目**：给定一个排序链表，删除所有重复的元素使得每个元素只留下一个
+
+- 给定 1->1->2，返回 1->2
+- 给定 1->1->2->3->3，返回 1->2->3
+- 链接：https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/description/
+
+**代码**：
+
+```angular2
+    public ListNode deleteDuplicates(ListNode head) {
+  
+        if(head==null){
+            return null;
+        }
+        
+        ListNode dummy = new ListNode(Integer.MAX_VALUE);
+        dummy.next = head;
+        head = dummy;
+        
+        while(head != null){
+            while(head.next != null && head.next.value == head.value){
+                head.next = head.next.next;
+            }
+            head = head.next;
+        }
+        return dummy.next;
+    }
+```
+
 
 
 
