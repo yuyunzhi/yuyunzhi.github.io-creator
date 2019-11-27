@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ae5092e-eedf-4391-bb83-322692a5ccf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/posts/algorithm-sort.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/algorithm/tree.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/algorithm-tree.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/algorithm-tree.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public" beforeDir="false" afterPath="$PROJECT_DIR$/public" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/ajax/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/ajax/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/ajax/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/ajax/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,14 +31,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/posts/algorithm-sort.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="187">
-                <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+              <first_editor relative-caret-position="95">
+                <caret line="62" selection-start-line="62" selection-end-line="62" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/.gitattributes">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -47,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/content/posts/js-vue-dom.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-1">
+              <first_editor relative-caret-position="253">
                 <caret line="11" selection-start-line="11" selection-end-line="11" />
               </first_editor>
               <second_editor />
@@ -59,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/content/posts/algorithm-complexity.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="63">
+              <first_editor relative-caret-position="759">
                 <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="66" />
               </first_editor>
               <second_editor />
@@ -88,12 +97,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/public" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/content/posts/初学jQuery-从封装函数开始.md" />
         <option value="$PROJECT_DIR$/content/posts/代码优化思路.md" />
         <option value="$PROJECT_DIR$/content/posts/发布npm包.md" />
         <option value="$PROJECT_DIR$/content/posts/84-years-old-programmer.md" />
@@ -144,6 +152,7 @@
         <option value="$PROJECT_DIR$/content/posts/algorithm-linked-list.md" />
         <option value="$PROJECT_DIR$/content/posts/algorithm-tree.md" />
         <option value="$PROJECT_DIR$/content/posts/algorithm-sort.md" />
+        <option value="$PROJECT_DIR$/public/.gitattributes" />
       </list>
     </option>
   </component>
@@ -176,24 +185,7 @@
             <path>
               <item name="yuyunzhi.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="yuyunzhi.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuyunzhi.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuyunzhi.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuyunzhi.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuyunzhi.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuyunzhi.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuyunzhi.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -282,12 +274,13 @@
       <workItem from="1574391273348" duration="24000" />
       <workItem from="1574396810667" duration="10102000" />
       <workItem from="1574671574222" duration="7232000" />
-      <workItem from="1574755353653" duration="3432000" />
+      <workItem from="1574755353653" duration="3801000" />
+      <workItem from="1574823068978" duration="893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154301000" />
+    <option name="totallyTimeSpent" value="155563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -303,9 +296,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16441876" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16441876" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.30125" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.30125" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50062346" side_tool="true" weight="0.2930481" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32941177" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -325,16 +318,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/content/posts/js-mvc.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="46">
-            <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/js-var-let-const.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -726,21 +709,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/algorithm-complexity.md">
+    <entry file="file://$PROJECT_DIR$/content/posts/js-vue-dom.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="63">
-            <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="66" />
+          <first_editor relative-caret-position="253">
+            <caret line="11" selection-start-line="11" selection-end-line="11" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/js-vue-dom.md">
+    <entry file="file://$PROJECT_DIR$/content/posts/algorithm-complexity.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1">
-            <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <first_editor relative-caret-position="759">
+            <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="66" />
           </first_editor>
           <second_editor />
         </state>
@@ -749,10 +732,17 @@
     <entry file="file://$PROJECT_DIR$/content/posts/algorithm-sort.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="187">
-            <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <first_editor relative-caret-position="95">
+            <caret line="62" selection-start-line="62" selection-end-line="62" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
         </state>
       </provider>
     </entry>
