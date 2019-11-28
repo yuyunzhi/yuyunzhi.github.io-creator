@@ -32,3 +32,93 @@ tags: ["算法"]
 
 # 三、二叉树代码表示
 
+```angular2
+public class BinaryTree<T> {
+    private TreeNode<T> root;
+
+    public Tree (T rootData){
+        root = new TreeNode<T>();
+        root.data = rootData;
+    }
+
+    public static class TreeNode<T>{
+        private T data;
+        private TreeNode<T> leftNode;
+        private TreeNode<T> rightNode;
+    }
+}
+```
+
+# 四、二叉树遍历
+
+- 前序遍历：父节点、左孩子、右孩子
+- 中序遍历：左孩子、父节点、右孩子
+- 后序遍历：左孩子、右孩子、父节点
+
+**递归实现遍历**：
+
+```angular2
+    public void preOrderTraversalWithRecursion(TreeNode root) {
+        if(root != null){
+            System.out.println(root.data);
+            preOrderTraversalWithRecursion(root.left);
+            preOrderTraversalWithRecursion(root.right);
+        }
+    }
+
+    public void inOrderTraversalWithRecursion(TreeNode root) {
+        if(root != null){
+            inOrderTraversalWithRecursion(root.left);
+            System.out.println(root.data);
+            inOrderTraversalWithRecursion(root.right);
+        }
+    }
+
+    public void postOrderTraversalWithRecursion(TreeNode root) {
+        if(root != null){
+            postOrderTraversalWithRecursion(root.left);
+            postOrderTraversalWithRecursion(root.right);
+            System.out.println(root.data);
+        }
+    }
+```
+
+**非递归实现前序遍历**：访问当前节点，右节点入栈，左节点入栈。pop左孩子（先遍历左孩子），然后对右孩子依次判断
+
+```angular2
+    public void preOrderTraversal(TreeNode root){
+        Stack<TreeNode> nodeStack = new Stack<TreeNode>();
+        nodeStack.push(root);
+        while(!nodeStack.empty()){
+            TreeNode node = nodeStack.pop();
+            System.out.println(node.data);
+            if(node.rightNode != null){
+                nodeStack.push(node.rightNode);
+            }
+            
+            if(node.leftNode != null){
+                nodeStack.push(node.leftNode);
+            }
+        }
+    }
+```
+
+**非递归实现中序遍历**:
+
+```angular2
+    public void inOrderTraversal(TreeNode root){
+        Stack<TreeNode> nodeStack = new Stack<TreeNode>();
+        TreeNode node = root;
+        while(!nodeStack.empty() || node != null){
+            if(node != null){
+                nodeStack.push(node);
+                node = node.leftNode;
+            }
+            else{
+                node = nodeStack.pop();
+                System.out.println(node.data);
+                node = node.rightNode;
+            }
+        }
+    }
+```
