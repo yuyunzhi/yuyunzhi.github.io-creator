@@ -1,6 +1,6 @@
 ---
 title: 链表 Linked List
-date: 2019-11-17T23:00:23+08:00
+date: 2019-11-10T23:00:23+08:00
 categories: ["算法"]
 tags: ["算法"]
 ---

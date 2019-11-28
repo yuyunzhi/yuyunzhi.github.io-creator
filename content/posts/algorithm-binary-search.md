@@ -1,6 +1,6 @@
 ---
 title: 二分搜索 Binary Search
-date: 2019-11-16T23:00:23+08:00
+date: 2019-11-09T23:00:23+08:00
 categories: ["算法"]
 tags: ["算法"]
 ---
