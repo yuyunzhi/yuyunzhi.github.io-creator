@@ -1,9 +1,15 @@
 #!/bin/sh
 
 echo "Please input three names:"
-read namea nameb namec
+read name
 
-echo "$namea,$nameb,$namec"
+echo "$name"
+
+echo "Please input two names:"
+
+read x
+
+echo "$name,$x"
 
 
 
