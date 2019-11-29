@@ -20,6 +20,6 @@ echo "-对public文件进行推送github---------------------------------"
 cd /Users/yuyunzhi/Desktop/yuyunzhi.github.io/public
 git status
 git add .
-git commit -m "$b"
+git commit -m "$a"
 git push
 
