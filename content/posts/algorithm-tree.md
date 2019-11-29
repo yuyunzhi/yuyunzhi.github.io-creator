@@ -122,3 +122,120 @@ public class BinaryTree<T> {
         }
     }
 ```
+
+**非递归实现后序遍历**: 思路是 逆后序遍历=前序遍历的左右子树入栈顺序交换
+
+```angular2
+    public void postOrderTraversalWithTwoStack(TreeNode root){
+        Stack<TreeNode> s1 = new Stack<TreeNode>();
+        Stack<TreeNode> s2 = new Stack<TreeNode>();
+        if(root == null){
+            return result;
+        }
+        s1.push(root);
+        while(!s1.isEmpty()){
+            TreeNode node = s1.pop();
+            if(node.leftNode != null){
+                s1.push(node.leftNode);
+            }
+
+            if(node.rightNode != null){
+                s1.push(node.rightNode);
+            }
+        }
+        while(!s2.isEmpty()){
+            TreeNode cur = s2.pop();
+            System.out.println(cur.data);
+        }
+        return result;
+    }
+```
+
+# 五、构建二叉树
+
+- 结论：需要两种不同的遍历来构造一棵树，并且其中一个必须是中序遍历。
+
+- 代码实现，，，待定
+
+# 六、二叉搜索树 BST
+
+**二叉搜索树特性**：
+
+- 所有的子树均为二叉搜索树
+- 任一左子树的全部节点的值均小于其根节点
+- 任一右子树的全部节点的值均小于其根节点的值
+- 二叉搜索树的中序遍历为一个排序数组
+
+![二叉搜索树](/algorithm/10.jpeg)
+
+
+**二叉搜索树API实现方法**：
+
+- 查找节点：find
+- 添加节点：add
+- 删除节点：remove
+
+**find**: 时间复杂度为O(h)，h为该棵树的高度，一层一层往下遍历
+
+```angular2
+   public boolean find(int value,TreeNode root){
+       TreeNode node = root;
+       while( node != null){
+           if(node.data == value){
+               return true;
+           }
+           else if(node.data > value){
+               node = node.leftNode;
+           }
+           else {
+               node = node.rightNode;
+           }
+       }
+       
+       return false;
+   }
+```
+
+**add**: 时间复杂度为O(h)，h为该棵树的高度，一层一层往下遍历。注意：校验root为null的情况，直接添加。
+
+```angular2
+   public boolean find(int value,TreeNode root){
+       if(root == null){
+           root = new TreeNode(value);
+           return true;
+       }
+       TreeNode node = root;
+       while( node != null){
+           if(node.data == value){
+               return false;
+           }
+           else if(node.data > value){
+               if(node.leftNode == null){
+                   node.leftNode = new TreeNode(value);
+                   return true;
+               }else{
+                   node = node.leftNode;
+               }
+           }
+           else {
+               if(node.rightNode == null){
+                   node.rightNode = new TreeNode(value);
+                   return true;
+               }else{
+                   node = node.rightNode;
+               }
+           }
+       }
+       return false;
+   }
+```
+
+**remove**:主要是两个步骤：1、查找要删除的节点；2、若查找到要删除的节点n，删除它
+
+从一颗二叉搜索树删除一个节点分为三种情况：
+
+- 节点n没有任何子树
+
+- 节点n只有一个子树
+
+- 节点n有两个子树
