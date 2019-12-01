@@ -62,9 +62,9 @@ hashcode("abcd") = (ascii(a) * 33 ^ 3 + ascii(b) * 33 ^2 + ascii(c) *33 + ascii(
 public int hashCode (char[] key, int hashSize){
     long result = 0;
     for(int i = 0; i<key.length;i++){
-        result = (long) ((int)key[i] * Math.pow(33, key.length-1-i))+result;
+        result = (result * 33 + (int)key[i]) % hashSize
     }
-    return (int) (result % hashSize);
+    return (int) result;
 }
 ```
 
@@ -75,3 +75,77 @@ public int hashCode (char[] key, int hashSize){
 
 ![hash冲突示意图](/algorithm/12.jpeg)
    
+**如何解决冲突？**
+
+- 没有排满，得到相同的index会冲突
+- 空间 size 小于放入的值的数量也一定会冲突
+
+# 三、开散列 VS 闭散列
+
+**解决方式**：
+
+- 步骤1：改变index ：Open hashing / Closed hashing
+- 步骤2：扩容装填因子Load factor: size/capacity，Java: LF > 0.75, resize()
+
+**Open hashing**：
+
+把底层的int[] 声明成 LinkList[],每一次存的时候都把key value存到ListNode,如果index重复了就遍历LinkList，找到正确的位置把key,value链接在该链表上。
+
+当链表长度大于8的时候，就会把链表变成树BST(红黑树)，这样可以提高查找速度
+
+![底层示意图](/algorithm/13.jpeg)
+
+
+```angular2
+class ListNode {
+    private int key;
+    private int value;
+    private ListNode next;
+
+    public ListNode(int key, int value){
+        this.value = value;
+        this.key = key;
+    }
+}
+```
+
+**扩容：重哈希rehashing**
+
+哈希表容量的大小在一开始是不确定的。如果哈希表存储的元素太多，我们应该将哈希表容量扩大一倍，并将所有的哈希值重新安排。
+
+![重哈希rehashing](/algorithm/14.jpeg)
+
+
+
+```angular2
+public ListNode[] rehashing(ListNode[] hashTable){
+    if(hashTable == null || hashTable.length == 0){
+        return null;
+    }
+    int capacity =hashTable.length;
+    int newCapacity = capacity*2;
+    ListNode[] newHashTable = new ListNode[newCapacity];
+    for(ListNode head : hashTable){
+        while(head != null){
+            int value = head.value;
+            int key = head.key;
+            int hashcode = (key % newCapacity + newCapacity) % newCapacity;
+
+            if(newHashTable[hashcode] != null){
+                ListNode node = newHashTable[hashcode];
+                ListNode keyNode = new ListNode(key,value);
+
+                while(node != null && node.next != null){
+                    node = node.next;
+                }
+                node.next = keyNode;
+            }
+            else{
+                newHashTable[hashcode] = new ListNode(key,value)
+            }
+            head = head.next;
+        }
+    }
+    return newHashTable;
+}
+```
