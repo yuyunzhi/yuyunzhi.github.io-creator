@@ -68,8 +68,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/algorithm-hash.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="707">
-                <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+              <first_editor relative-caret-position="-130">
+                <caret line="111" column="19" lean-forward="true" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
               </first_editor>
               <second_editor />
             </state>
@@ -360,12 +360,12 @@
       <workItem from="1574671574222" duration="7232000" />
       <workItem from="1574755353653" duration="3801000" />
       <workItem from="1574823068978" duration="12831000" />
-      <workItem from="1574906735525" duration="34461000" />
+      <workItem from="1574906735525" duration="34776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201962000" />
+    <option name="totallyTimeSpent" value="202277000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -378,12 +378,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="281" y="23" width="1237" height="891" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17516448" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" weight="0.30162704" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.30162704" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50062346" side_tool="true" weight="0.2930481" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32916147" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -829,8 +828,8 @@
     <entry file="file://$PROJECT_DIR$/content/posts/algorithm-hash.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="707">
-            <caret line="149" column="1" selection-start-line="149" selection-start-column="1" selection-end-line="149" selection-end-column="1" />
+          <first_editor relative-caret-position="-130">
+            <caret line="111" column="19" lean-forward="true" selection-start-line="111" selection-start-column="19" selection-end-line="111" selection-end-column="19" />
           </first_editor>
           <second_editor />
         </state>
