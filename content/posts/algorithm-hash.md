@@ -149,3 +149,7 @@ public ListNode[] rehashing(ListNode[] hashTable){
     return newHashTable;
 }
 ```
+
+**Closed hashing**：
+
+- 如果index重复了，就找下面空的位置填充,当数组length达到一定的长度的时候就继续扩容，始终保持闭散列方式存在空的位置。
