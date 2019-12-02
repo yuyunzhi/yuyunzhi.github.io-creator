@@ -160,3 +160,41 @@ rightValue = Function.prototype
 可知 Foo.__proto__ === Function.prototype // 不等于Foo.prototype
 所以：Foo instanceof Function  为true
 ```
+
+# 二、JavaScript 数组API实现原理
+
+### 1、map
+
+不改变原来数组，回调函数的参数及返回值
+
+```angular2
+Array.prototype.myMap = function(fn, context){
+  var arr = Array.prototype.slice.call(this)
+  var mapArr = []
+  for (var i = 0; i < arr.length; i++ ){
+    if(!arr.hasOwnProperty(i)) continue
+    mapArr.push(fn.call(context, arr[i], i, this))
+  }
+  return mapArr
+}
+
+let a = [1,2,3]
+let b = a.myMap((item,index)=>{return item*index})  // b = [0,2,6]
+```
+
+hasOwnProperty 的作用是 表示是否有自己的属性。要注意function换成箭头函数，内部this指向就不准确了。
+使用push对fn返回的值进行添加到mapArr最后返回新的数组。
+
+```angular2
+let obj = {
+    a: 1,
+    fn: function(){},
+    c:{d: 5}
+};
+console.log(obj.hasOwnProperty('a'));  // true
+console.log(obj.hasOwnProperty('fn'));  // true
+console.log(obj.hasOwnProperty('c'));  // true
+console.log(obj.c.hasOwnProperty('d'));  // true
+console.log(obj.hasOwnProperty('d'));  // false, obj对象没有d属性
+```
+
