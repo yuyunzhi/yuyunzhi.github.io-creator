@@ -541,3 +541,34 @@ for(let i=0; i<a.length;i++){
 //hashTab: {4: true, 2: true, 5: true, 6:true, 3: true}
 console.log(Object.keys(hashTab)) // ['4','2','5','6','3']
 ```
+
+# 十一、斐波那契数列及优化
+
+基础的递归版本，性能极差，fib(500)就爆栈了
+
+```
+function fib(n){   
+    if(n < 1) throw new Error("参数有误")          
+    if(n <= 2){ return 1}       
+    return fib(n - 1) + fib(n - 2)
+}
+```
+
+```angular2
+let cache = [];
+function fib(n){        
+    if(cache[n] !== undefined){               
+           return cache[n]
+    }          
+    if(n <= 2){               
+          cache[n] = 1
+          return 1
+    }    
+    cache[n] = fib(n - 1) + fib(n - 2)
+    return cache[n];
+}
+console.log(fib(5)) // 5
+```
+
+
+
