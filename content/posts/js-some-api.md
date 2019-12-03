@@ -163,7 +163,7 @@ rightValue = Function.prototype
 
 # 二、JavaScript 数组API实现原理
 
-### 1、map
+### 1、循环遍历实现map
 
 不改变原来数组，回调函数的参数及返回值
 
@@ -197,4 +197,49 @@ console.log(obj.hasOwnProperty('c'));  // true
 console.log(obj.c.hasOwnProperty('d'));  // true
 console.log(obj.hasOwnProperty('d'));  // false, obj对象没有d属性
 ```
+
+### 2、reduce实现map
+
+reduce的使用：pre是上一个return的值，所以使用[...pre , fn.call(context,cur,index,this)]
+
+```angular2
+Array.prototype.myMap = function(fn, context){
+  let arr = Array.prototype.slice.call(this)
+  let newArr = arr.reduce((pre,cur,index)=>{
+      return [...pre,fn.call(context,cur,index,this)]
+  },[])
+  return newArr
+}
+```
+
+
+### 3、循环遍历实现filter
+
+需要注意的是，filter的fn是返回一个boolean，当boolean为true的时候才push到数组里
+
+```angular2
+Array.prototype.myFilter = function(fn, context){
+  let arr = Array.prototype.slice.call(this)
+  let filterArr = []
+  for(let i = 0; i< arr.length; i++){
+      if(!arr.hasOwnProperty(i)) continue
+      fn.call(context,arr[i],i,this) && filterArr.push(arr[i])
+  }
+  return filterArr
+}
+```
+
+### 4、reduce实现 filter
+
+```angular2
+Array.prototype.myFilter = function(fn, context){
+  let arr = Array.prototype.slice.call(this)
+  let newArr = arr.reduce((pre,cur,index)=>{
+      return fn.call(context,cur,index,this) ? [...pre,cur] : [...pre]
+  },[])
+  return newArr
+}
+```
+
+
 

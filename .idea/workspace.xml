@@ -85,8 +85,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/js-some-api.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="124">
-                <caret line="184" column="31" selection-start-line="184" selection-start-column="31" selection-end-line="184" selection-end-column="31" />
+              <first_editor relative-caret-position="324">
+                <caret line="234" column="49" lean-forward="true" selection-start-line="234" selection-start-column="49" selection-end-line="235" selection-end-column="44" />
               </first_editor>
               <second_editor />
             </state>
@@ -206,8 +206,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2075" />
-    <option name="y" value="172" />
+    <option name="x" value="2236" />
+    <option name="y" value="206" />
     <option name="width" value="1237" />
     <option name="height" value="891" />
   </component>
@@ -347,12 +347,12 @@
       <workItem from="1574755353653" duration="3801000" />
       <workItem from="1574823068978" duration="12831000" />
       <workItem from="1574906735525" duration="35683000" />
-      <workItem from="1575249062818" duration="14467000" />
+      <workItem from="1575249062818" duration="17687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217651000" />
+    <option name="totallyTimeSpent" value="220871000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -364,7 +364,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2075" y="172" width="1237" height="891" extended-state="0" />
+    <frame x="2236" y="206" width="1237" height="891" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -813,8 +813,8 @@
     <entry file="file://$PROJECT_DIR$/content/posts/js-some-api.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="124">
-            <caret line="184" column="31" selection-start-line="184" selection-start-column="31" selection-end-line="184" selection-end-column="31" />
+          <first_editor relative-caret-position="324">
+            <caret line="234" column="49" lean-forward="true" selection-start-line="234" selection-start-column="49" selection-end-line="235" selection-end-column="44" />
           </first_editor>
           <second_editor />
         </state>
