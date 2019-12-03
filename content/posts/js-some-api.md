@@ -231,6 +231,8 @@ Array.prototype.myFilter = function(fn, context){
 
 ### 4、reduce实现 filter
 
+这里的reduce是根据fn.call返回的是否是true来决定是否要添加当前的item
+
 ```angular2
 Array.prototype.myFilter = function(fn, context){
   let arr = Array.prototype.slice.call(this)
@@ -238,6 +240,50 @@ Array.prototype.myFilter = function(fn, context){
       return fn.call(context,cur,index,this) ? [...pre,cur] : [...pre]
   },[])
   return newArr
+}
+```
+
+### 5、循环实现some
+
+some的作用是遍历数组，判断是否满足某个条件返回boolean值
+
+```angular2
+ function isBigEnough(element, index, array) {
+   return (element >= 5); //数组中是否有一个元素大于 10
+ }
+ let result = [2, 3, 0, 1, 4].some(isBigEnough); // false
+ let result = [6, 5, 8, 2, 3].some(isBigEnough); // true
+```
+
+mySome，如果是空数组则返回false，满足条件就退出循环返回true，没有一个满足条件则返回false
+
+```angular2
+Array.prototype.mySome = function(fn,context){
+  let arr = Array.prototype.slice.call(this)
+  if(arr.length===0) return false
+  for(let i = 0; i<arr.length; i++){
+    if(!arr.hasOwnProperty(i)) continue
+    if(fn.call(context,arr[i],i,this)){
+      return true
+    }
+  }
+  return false
+}
+```
+
+### 6、循环实现reduce
+
+reduce 第一个参数是函数，第二参数是初始值，可有可无，如果初始值没有的话直接取arr[0]，数组循环从第一个开始
+
+```angular2
+Array.prototype.myReduce = function(fn,initData){
+  let arr = Array.prototype.slice.call(this)
+  let res = initData || arr[0]
+  let startIndex = initData ? 0 : 1;
+  for(let i = startIndex;i<arr.length; i++){
+    res = fn.call(null,res,arr[i],i,this)
+  }
+  return res
 }
 ```
 

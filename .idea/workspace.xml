@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ae5092e-eedf-4391-bb83-322692a5ccf2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/study.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/posts/js-some-api.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/js-some-api.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public" beforeDir="false" afterPath="$PROJECT_DIR$/public" afterDir="false" />
     </list>
@@ -85,8 +87,20 @@
         <entry file="file://$PROJECT_DIR$/content/posts/js-some-api.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="324">
-                <caret line="234" column="49" lean-forward="true" selection-start-line="234" selection-start-column="49" selection-end-line="235" selection-end-column="44" />
+              <first_editor relative-caret-position="347">
+                <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/study.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="69">
+                <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
               </first_editor>
               <second_editor />
             </state>
@@ -145,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/content/posts/iframe-a-form-input-table.md" />
         <option value="$PROJECT_DIR$/content/posts/什么是闭包，闭包的用途是什么？.md" />
         <option value="$PROJECT_DIR$/content/posts/mvc.md" />
         <option value="$PROJECT_DIR$/content/posts/声明一个函数立即执行.md" />
@@ -196,6 +209,7 @@
         <option value="$PROJECT_DIR$/content/posts/algorithm-hash.md" />
         <option value="$PROJECT_DIR$/todolist.md" />
         <option value="$PROJECT_DIR$/content/posts/js-some-api.md" />
+        <option value="$PROJECT_DIR$/study.md" />
       </list>
     </option>
   </component>
@@ -206,8 +220,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2236" />
-    <option name="y" value="206" />
+    <option name="x" value="1843" />
+    <option name="y" value="95" />
     <option name="width" value="1237" />
     <option name="height" value="891" />
   </component>
@@ -235,22 +249,6 @@
               <item name="yuyunzhi.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
               <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuyunzhi.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuyunzhi.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuyunzhi.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuyunzhi.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuyunzhi.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuyunzhi.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yuyunzhi.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -347,12 +345,12 @@
       <workItem from="1574755353653" duration="3801000" />
       <workItem from="1574823068978" duration="12831000" />
       <workItem from="1574906735525" duration="35683000" />
-      <workItem from="1575249062818" duration="17687000" />
+      <workItem from="1575249062818" duration="22819000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220871000" />
+    <option name="totallyTimeSpent" value="226003000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -364,13 +362,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2236" y="206" width="1237" height="891" extended-state="0" />
+    <frame x="1843" y="95" width="1237" height="891" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21792763" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21792763" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.30162704" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.30162704" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50062346" side_tool="true" weight="0.2930481" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32916147" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -390,14 +388,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/archetypes/default.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/common-web-principle.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -770,16 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/algorithm-array.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/js-sass.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -810,11 +790,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/study.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="69">
+            <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/algorithm-array.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/js-some-api.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="324">
-            <caret line="234" column="49" lean-forward="true" selection-start-line="234" selection-start-column="49" selection-end-line="235" selection-end-column="44" />
+          <first_editor relative-caret-position="347">
+            <caret line="291" lean-forward="true" selection-start-line="291" selection-end-line="291" />
           </first_editor>
           <second_editor />
         </state>
