@@ -86,8 +86,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/js-some-api.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="57">
-                <caret line="547" lean-forward="true" selection-start-line="547" selection-end-line="547" />
+              <first_editor relative-caret-position="639">
+                <caret line="669" column="4" selection-start-line="669" selection-start-column="4" selection-end-line="669" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -219,10 +219,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1750" />
-    <option name="y" value="104" />
+    <option name="x" value="1782" />
+    <option name="y" value="35" />
     <option name="width" value="1237" />
-    <option name="height" value="891" />
+    <option name="height" value="1137" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -345,12 +345,13 @@
       <workItem from="1574823068978" duration="12831000" />
       <workItem from="1574906735525" duration="35683000" />
       <workItem from="1575249062818" duration="23423000" />
-      <workItem from="1575351655359" duration="5138000" />
+      <workItem from="1575351655359" duration="5376000" />
+      <workItem from="1575359928537" duration="7135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231745000" />
+    <option name="totallyTimeSpent" value="239118000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -362,13 +363,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1750" y="104" width="1237" height="891" extended-state="0" />
+    <frame x="1782" y="35" width="1237" height="1137" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21792763" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15871711" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.30162704" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.23062201" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50062346" side_tool="true" weight="0.2930481" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32916147" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -804,8 +805,8 @@
     <entry file="file://$PROJECT_DIR$/content/posts/js-some-api.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="57">
-            <caret line="547" lean-forward="true" selection-start-line="547" selection-end-line="547" />
+          <first_editor relative-caret-position="639">
+            <caret line="669" column="4" selection-start-line="669" selection-start-column="4" selection-end-line="669" selection-end-column="4" />
           </first_editor>
           <second_editor />
         </state>

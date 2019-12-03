@@ -546,13 +546,15 @@ console.log(Object.keys(hashTab)) // ['4','2','5','6','3']
 
 基础的递归版本，性能极差，fib(500)就爆栈了
 
-```
+```angular2
 function fib(n){   
     if(n < 1) throw new Error("参数有误")          
     if(n <= 2){ return 1}       
     return fib(n - 1) + fib(n - 2)
 }
 ```
+
+缓存优化版本，性能略好，仍然可能
 
 ```angular2
 let cache = [];
@@ -570,5 +572,110 @@ function fib(n){
 console.log(fib(5)) // 5
 ```
 
+动态规划版本
 
+```angular2
+function fib (n) {
+    let res = 1;
+    if(n === 1 && n ===2) return res
+    n = n-2
+    let cur = 1
+    let pre = 1
+    while (n) {
+        res = cur + pre
+        pre = cur
+        cur = res
+        n--
+    }
+    return res
+}
+```
 
+# 十二、函数防抖
+
+基本思路就是把多个事件合并为一个事件：this 指向 、event 对象 、 返回值
+
+```angular2
+const debounce = (fn, time = 1000, options = {
+    immediate: true,
+    context: null
+}) => {
+
+    let timer;
+    const _debounce = function (...args) {
+        if (timer) {
+            clearTimeout(timer)
+        }
+        if (options.immediate) {
+            timer = setTimeout(null, time)
+            fn.apply(options.context, args)
+        }else{
+            timer = setTimeout(() => {
+                fn.apply(options.context, args)
+                timer = null
+            }, time)
+        }
+    };
+    _debounce.cancel = function () {
+        clearTimeout(timer)
+        timer = null
+    }
+    return _debounce
+}
+```
+
+使用方式
+
+```angular2
+function handler() {
+     console.log(1)
+}
+let debouncedFn = debounce(handler, 2000)
+let button = document.querySelector("button")
+button.onclick =  debouncedFunc.cancel
+window.addEventListener('scroll', debouncedFn)
+```
+
+# 十四、实现Object.assign
+
+实现代码
+
+```angular2
+    // 函数版本
+    function assign (target) {
+        // 验证第一个参数是否为object
+        if (typeof target !== 'object' || target == null) {
+            return Object(target);
+        }
+        // arguments转为数组
+        let copyList = Array.prototype.slice.call(arguments, 1);
+        let len = copyList.length;
+        // 循环复制多个对象的属性
+        for (let i = 0; i < len; i++) {
+            let item = copyList[i];
+            // 获取当前对象的属性
+            for (let key in item) {
+                // 判断属性是否在对象本身上
+                if (item.hasOwnProperty(key)) {
+                    // 复制给目标对象
+                    target[key] = item[key]
+                }
+            }
+        }
+        // 返回目标对象
+        return target;
+    }
+```
+
+使用方式
+
+```angular2
+    // 验证assign代码
+    var target = { firstname: 'target', age: 20 };
+    var source = { lastname: 'source', age: 21 };
+    const newtarget = assign(target, source);
+    // target与newtarget指向同一个内存地址
+    console.log(target); // {firstname: "target", age: 21, lastname: "source"}
+    console.log(newtarget); // {firstname: "target", age: 21, lastname: "source"}
+    console.log(newtarget === target); // true
+```
