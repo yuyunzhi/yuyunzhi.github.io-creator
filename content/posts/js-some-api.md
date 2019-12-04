@@ -554,6 +554,7 @@ function fib(n){
 }
 ```
 
+
 缓存优化版本，性能略好，仍然可能
 
 ```angular2
@@ -637,6 +638,11 @@ window.addEventListener('scroll', debouncedFn)
 ```
 
 # 十四、实现Object.assign
+
+- 先判断是否是oject，不是的话就返回
+- 获取所有参数并且转化为数组
+- 遍历该数组[{},{}],再遍历每个对象的key，把key和value赋值给target
+- 最后返回target
 
 实现代码
 
