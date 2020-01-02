@@ -688,34 +688,47 @@ window.addEventListener('scroll', debouncedFn)
 
 # 十五、实现call
 
-用法
-
-```angular2
-
-```
 
 原理实现
 
-```angular2
-function myCall(context) {
+```
+function myCall(context,...args) {
   // 1
   if (typeof this !== 'function'){
-	throw new TypeError('error')
+    throw new TypeError('error')
   }
   // 2
   context = context || window
   // 3
   context.fn = this
   // 4
-  const args = [...arguments].slice(1)
-  // 5
   const result = context.fn(...args)
-  // 6
+  // 5
   delete context.fn
+
   return result
 }
+
 Function.prototype.myCall = myCall
 
 getName.myCall(obj， 'str1', 'str2')
 
 ```
+
+用法
+
+```
+const obj={
+    a:1,
+    b:2
+}
+function getName(a,b){
+ // console.log('arguments',arguments)
+  console.log(this)
+}
+getName.myCall(obj, 'str1', 'str2')
+```
+
+
+
+
