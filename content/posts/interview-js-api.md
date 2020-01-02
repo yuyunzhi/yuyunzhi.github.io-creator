@@ -1,7 +1,7 @@
 ---
 title: JavaScript一些常用方法
 date: 2019-12-01T23:00:23+08:00
-categories: ["JavaScript"]
+categories: ["面试"]
 tags: ["JavaScript"]
 ---
 

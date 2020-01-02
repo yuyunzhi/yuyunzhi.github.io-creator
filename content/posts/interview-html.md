@@ -1,7 +1,7 @@
 ---
 title: HTML、CSS
 date: 2020-01-02T13:00:23+08:00
-categories: ["html"]
+categories: ["面试"]
 tags: ["HTML"]
 ---
 
@@ -223,4 +223,39 @@ CSS 盒子模型具有内容 (content)、填充 (padding)、边框 (border)、�
 - :nth-child(even) 偶数
 - :nth-child(3n+1)
 
+## 22、什么是响应式设计 ？响应式设计的基本原理是什么 ？
 
+- 响应式网站设计是一个网站能够兼容多个终端，而不是为每一个终端做一个特定的版本
+- 基本原理是通过媒体查询检测不同的设备屏幕尺寸做处理。页面头部必须有 meta 声明的 viewport 
+- rem、vw/vh、插件postcss-px-to-viewport
+
+[戳戳戳，媒体查询使用方式](https://zhuanlan.zhihu.com/p/36851344)
+
+```angular2
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+```
+
+width=device-width: 让当前viewport宽度等于设备的宽度
+user-scalable=no: 禁止用户缩放
+initial-scale=1.0: 设置页面的初始缩放值为不缩放
+maximum-scale=1.0: 允许用户的最大缩放值为1.0
+minimum-scale=1.0: 允许用户的最小缩放值为1.0
+
+## 23、::before 和 :after 中双冒号和单冒号有什么区别 ？解释一下这 2 个伪元素的作用
+
+- 单冒号 (:) 用于 CSS3 伪类，双冒号 (::) 用于 CSS3 伪元素
+- ::before 就是以一个子元素的存在，定义在元素主体内容之前的一个伪元素。并不存在于 dom 之中，只存在在页面之中
+
+## 23、style 标签写在 body 后与 body 前有什么区别？
+
+- 页面加载自上而下，当然是先加载样式。
+  
+- 写在 body 标签后，由于浏览器以逐行方式对 HTML 文档进行解析，当解析到写在尾部的样式表（外联或写在 style 标签）会导致浏览器停止之前的渲染，等待加载且解析样式表完成之后重新渲染，在 windows 的 IE 下可能会出现 FOUC 现象（即样式失效导致的页面闪烁问题）
+
+## 24、rem、em、px、vh 与 vw 的区别 ？
+
+- px：表示像素，相对长度单位。像素 px 是相对于显示器屏幕分辨率而言的。
+- em：一个字的高度，是相对长度单位 //1em == 自己font-size的值
+- rem：root em // 根元素html的font-size
+- vh：viewport height   视口高度=100vh
+- vw：viewport width    视口宽度=100vw
