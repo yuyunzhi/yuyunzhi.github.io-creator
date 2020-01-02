@@ -685,3 +685,37 @@ window.addEventListener('scroll', debouncedFn)
     console.log(newtarget); // {firstname: "target", age: 21, lastname: "source"}
     console.log(newtarget === target); // true
 ```
+
+# 十五、实现call
+
+用法
+
+```angular2
+
+```
+
+原理实现
+
+```angular2
+function myCall(context) {
+  // 1
+  if (typeof this !== 'function'){
+	throw new TypeError('error')
+  }
+  // 2
+  context = context || window
+  // 3
+  context.fn = this
+  // 4
+  const args = [...arguments].slice(1)
+  // 5
+  const result = context.fn(...args)
+  // 6
+  delete context.fn
+  return result
+}
+Function.prototype.myCall = myCall
+
+getName.myCall(obj， 'str1', 'str2')
+
+```
