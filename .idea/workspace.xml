@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ae5092e-eedf-4391-bb83-322692a5ccf2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/interview-js-api.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/interview-js-api.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/posts/interview-js.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/interview-js.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public" beforeDir="false" afterPath="$PROJECT_DIR$/public" afterDir="false" />
     </list>
@@ -44,8 +46,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="322">
-                <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <first_editor relative-caret-position="598">
+                <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
               </first_editor>
               <second_editor />
             </state>
@@ -56,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/git.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -77,8 +79,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/interview-js-api.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="161">
-                <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <first_editor relative-caret-position="405">
+                <caret line="716" lean-forward="true" selection-start-line="716" selection-end-line="716" />
               </first_editor>
               <second_editor />
             </state>
@@ -220,7 +222,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="488" />
+    <option name="x" value="487" />
     <option name="y" value="23" />
     <option name="width" value="1624" />
     <option name="height" value="1027" />
@@ -349,12 +351,12 @@
       <workItem from="1575351655359" duration="5376000" />
       <workItem from="1575359928537" duration="12667000" />
       <workItem from="1575521078193" duration="1050000" />
-      <workItem from="1577947043460" duration="11295000" />
+      <workItem from="1577947043460" duration="16313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256995000" />
+    <option name="totallyTimeSpent" value="262013000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,13 +368,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="488" y="23" width="1624" height="1027" extended-state="1" />
+    <frame x="487" y="23" width="1624" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19089207" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19089207" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.25668448" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.25668448" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50062346" side_tool="true" weight="0.2930481" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32916147" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -778,17 +780,7 @@
     <entry file="file://$PROJECT_DIR$/git.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/interview-js-api.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="161">
-            <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -810,11 +802,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/interview-js-api.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="405">
+            <caret line="716" lean-forward="true" selection-start-line="716" selection-end-line="716" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="322">
-            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <first_editor relative-caret-position="598">
+            <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
           </first_editor>
           <second_editor />
         </state>

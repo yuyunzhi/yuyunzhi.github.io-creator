@@ -691,7 +691,7 @@ window.addEventListener('scroll', debouncedFn)
 
 原理实现
 
-```
+```angular2
 function myCall(context,...args) {
   // 1
   if (typeof this !== 'function'){
@@ -717,7 +717,7 @@ getName.myCall(obj， 'str1', 'str2')
 
 用法
 
-```
+```angular2
 const obj={
     a:1,
     b:2
