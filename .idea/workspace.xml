@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ae5092e-eedf-4391-bb83-322692a5ccf2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/interview-js-api.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/interview-js-api.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/posts/interview-js.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/interview-js.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public" beforeDir="false" afterPath="$PROJECT_DIR$/public" afterDir="false" />
     </list>
@@ -46,8 +45,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="598">
-                <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+              <first_editor relative-caret-position="385">
+                <caret line="197" column="8" selection-start-line="197" selection-start-column="8" selection-end-line="197" selection-end-column="8" />
               </first_editor>
               <second_editor />
             </state>
@@ -80,7 +79,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="405">
-                <caret line="716" lean-forward="true" selection-start-line="716" selection-end-line="716" />
+                <caret line="716" selection-start-line="716" selection-end-line="716" />
               </first_editor>
               <second_editor />
             </state>
@@ -222,7 +221,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="487" />
+    <option name="x" value="373" />
     <option name="y" value="23" />
     <option name="width" value="1624" />
     <option name="height" value="1027" />
@@ -351,12 +350,12 @@
       <workItem from="1575351655359" duration="5376000" />
       <workItem from="1575359928537" duration="12667000" />
       <workItem from="1575521078193" duration="1050000" />
-      <workItem from="1577947043460" duration="16313000" />
+      <workItem from="1577947043460" duration="20696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262013000" />
+    <option name="totallyTimeSpent" value="266396000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -368,8 +367,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="487" y="23" width="1624" height="1027" extended-state="0" />
-    <editor active="true" />
+    <frame x="373" y="23" width="1624" height="1027" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19089207" />
@@ -806,7 +804,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="405">
-            <caret line="716" lean-forward="true" selection-start-line="716" selection-end-line="716" />
+            <caret line="716" selection-start-line="716" selection-end-line="716" />
           </first_editor>
           <second_editor />
         </state>
@@ -815,8 +813,8 @@
     <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="598">
-            <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+          <first_editor relative-caret-position="385">
+            <caret line="197" column="8" selection-start-line="197" selection-start-column="8" selection-end-line="197" selection-end-column="8" />
           </first_editor>
           <second_editor />
         </state>

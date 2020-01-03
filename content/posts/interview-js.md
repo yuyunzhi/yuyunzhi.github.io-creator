@@ -77,7 +77,7 @@ cat.showName(); //TONY
 
 **判断变量类型**：
 
-```
+```angular2
 let arr1 = [1, 2, 3];
 let str1 = "string";
 let obj1 = { name: "thomas" };
@@ -126,7 +126,7 @@ const fakeArray = {
 ```
 
 方法一：
-```
+```angular2
 let arr2 = Array.prototype.slice.call(fakeArray)
 ```
 
@@ -148,9 +148,94 @@ let arr2 = Array.from(fakeArray);
 - 只有在鼠标指针穿过被选元素时，才会触发 mouseenter 事件，对应 mouseleave。
  
 
+## 5、哪些常见操作会造成内存泄漏 ？
 
+内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。如果一个对象的引用数量为 0（没有其他对象引用过该对象），或对该对象的惟一引用是循环的，那么该对象的内存即可回收。
 
+**1、创建了全局变量**
 
+```angular2
+function foo(){
+  window.name = '前端曰'；
+}
+
+// 又或者
+function foo(){
+  this.name = '前端曰'；
+}
+foo() // 其实这里的this就是指向的window对象
+```
+
+解决方案：在你的Javascript文件最前面添加 'use strict;'
+
+**2、循环引用**：引用计数的策略是将“对象是否不再需要”简化成“对象有没有其他对象引用到它”，如果没有对象引用这个对象，那么这个对象将会被回收 。
+
+```angular2
+function func() {  
+    let obj1 = {};  
+    let obj2 = {};  
+  
+    obj1.a = obj2; // obj1 引用 obj2  
+    obj2.a = obj1; // obj2 引用 obj1  
+}
+```
+
+当函数 func 执行结束后，返回值为 undefined，所以整个函数以及内部的变量都应该被回收，但根据引用计数方法，obj1 和 obj2 的引用次数都不为 0，所以他们不会被回收。要解决循环引用的问题，最好是在不使用它们的时候手工将它们设为空。
+
+解决方案：obj1 和 obj2 都设为 null 
+
+**3、老生常谈的闭包**:匿名函数可以访问父级作用域的变量。
+
+```angular2
+var names = (function(){  
+    var name = 'js-say';
+    return function(){
+        console.log(name);
+    }
+})()
+```
+
+**4、被遗忘的定时器**：日常需求中，可能会经常试用到 setInterval/setTimeout ，但是使用完之后通常忘记清理
+
+```angular2
+ mounted() {
+    this.refreshInterval = setInterval(function() {
+      // 轮询获取数据
+      this.refresh()
+    }, 2000)
+  }
+```
+组件销毁的时候，setInterval 还是在运行的，里面涉及到的内存都是没法回收的（浏览器会认为这是必须的内存，不是垃圾内存），需要在组件销毁的时候清除计时器
+
+```angular2
+  beforeDestroy() {
+    clearInterval(this.refreshInterval)
+  }
+```
+
+**5、被遗忘的事件监听器**：无用的事件监听器需要清理掉
+
+```angular2
+ mounted() {
+    window.addEventListener('resize', () => {
+      // 这里做一些操作
+    })
+  },
+```
+
+上面的组件销毁的时候，resize 事件还是在监听中，里面涉及到的内存都是没法回收的（浏览器会认为这是必须的内存，不是垃圾内存），需要在组件销毁的时候移除相关的事件
+
+```angular2
+ mounted() {
+    this.resizeEventCallback = () => {
+      // 这里做一些操作
+    }
+    window.addEventListener('resize', this.resizeEventCallback)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.resizeEventCallback)
+  },
+```
 
 
 
