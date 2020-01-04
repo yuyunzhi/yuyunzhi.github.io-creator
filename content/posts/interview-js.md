@@ -1,7 +1,7 @@
 ---
-title: JavaScript
+title: JavaScript知识
 date: 2020-01-02T17:00:23+08:00
-categories: ["JavaScript"]
+categories: ["面试"]
 tags: ["JavaScript"]
 ---
 

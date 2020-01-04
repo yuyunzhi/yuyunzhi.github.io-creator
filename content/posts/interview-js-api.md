@@ -1,6 +1,6 @@
 ---
 title: JavaScript一些常用方法
-date: 2019-12-01T23:00:23+08:00
+date: 2020-02-03T23:00:23+08:00
 categories: ["面试"]
 tags: ["JavaScript"]
 ---
