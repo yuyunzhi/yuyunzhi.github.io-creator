@@ -729,6 +729,29 @@ function getName(a,b){
 getName.myCall(obj, 'str1', 'str2')
 ```
 
+# 十六、柯里化
 
+**思路**：1、使用闭包来储存上一次调用结果的变量，fn,args；2、对函数停止时做边界处理
 
+```angular2
+function curry(fn){
+    if(fn.length <= 1) return fn
+    const generator = (...args) =>{
+        if(fn.length === args.length){
+            return fn(...args)
+        }else{
+            return (...args2)=>{
+                return generator(...args,...args2)
+            }
+        }
+    }
+    return generator
+}
 
+// 使用方式
+let add = (a,b,c,d ) => a+b+c+d
+const curriedAdd = curry(add)
+curriedAdd(5)(6)(7)(8)
+curriedAdd(5，6)(7)(8)
+curriedAdd(5，6，7，8)
+```
