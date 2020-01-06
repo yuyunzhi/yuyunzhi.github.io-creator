@@ -62,7 +62,7 @@ defaultContentLanguageInSubdir = false
     since = 2018
     author = "余韵之"
     avatar = "/images/my/avatar.jpeg"
-    subtitle = "To be a soul engineer"
+    subtitle = "Outside In,Inside Out"
     cdn_url = ""           # Base CDN URL
     home_mode = "my" # post or other
 
