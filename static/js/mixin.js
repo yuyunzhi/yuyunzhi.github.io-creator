@@ -8,6 +8,7 @@ const mixin = {
       countdownFunc: null,
       smsDisabled: false,
       smsButtonText: '获取短信验证码',
+      timer:null //定时器
     }
   },
   filters: {
@@ -169,6 +170,7 @@ const mixin = {
 
     // 格式化数字（每三位加逗号）
     toThousands(num) {
+      let result = null
        num = (num || 0).toString(),
         result = "";
       while (num.length > 3) {
@@ -179,6 +181,36 @@ const mixin = {
         result = num + result;
       }
       return result;
+    },
+    // 防抖 input 减少发送ajax
+    debounce(fn,time=300,options={
+      leading:true,
+      context:null,
+    }){
+      this.timer;
+      const _debounce = (...args)=>{
+          if(this.timer){
+            clearTimeout(this.timer)
+          }
+
+          if(options.leading && !this.timer){
+            this.timer = setTimeout(null,time)
+            fn.apply(options.context,args)
+          }else{
+            this.timer = setTimeout(()=>{
+              fn.apply(options.context,args)
+              this.timer = null
+            },time)
+
+          }
+      }
+
+      _debounce.cancel = ()=>{
+        clearTimeout(this.timer)
+        this.timer = null
+      }
+
+      return _debounce
     }
   }
 }

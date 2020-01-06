@@ -1,6 +1,6 @@
 ---
 title: JavaScript输出结果题
-date: 2020-02-03T23:00:23+08:00
+date: 2020-01-03T23:00:23+08:00
 categories: ["面试"]
 tags: ["JavaScript"]
 ---

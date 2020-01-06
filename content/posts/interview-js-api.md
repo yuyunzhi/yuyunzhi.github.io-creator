@@ -1,6 +1,6 @@
 ---
 title: JavaScript一些常用方法
-date: 2020-02-03T23:00:23+08:00
+date: 2020-01-03T23:00:23+08:00
 categories: ["面试"]
 tags: ["JavaScript"]
 ---
@@ -755,3 +755,42 @@ curriedAdd(5)(6)(7)(8)
 curriedAdd(5，6)(7)(8)
 curriedAdd(5，6，7，8)
 ```
+
+# 十七、防抖
+
+用在input中，一段时间内只触发一次，在一段时间内又触发那么时间就重新计算。函数防抖就是法师发技能的时候要读条，技能读条没完再按技能就会重新读条。
+
+```angular2
+   debounce(fn,time=300,options={
+      leading:true,
+      context:null,
+    }){
+      let timer;
+      const _debounce = (...args)=>{
+          if(timer){
+            clearTimeout(timer)
+          }
+
+          if(options.leading && !timer){
+            timer = setTimeout(null,time)
+            fn.apply(options.context,args)
+          }else{
+            timer = setTimeout(()=>{
+              fn.apply(options.context,args)
+              timer = null
+            },time)
+
+          }
+      }
+
+      _debounce.cancel = ()=>{
+        clearTimeout(timer)
+        timer = null
+      }
+
+      return _debounce
+    }
+```
+
+leading 为是否在进入时立即执行一次，同时通过闭包向外暴露了一个 cancel 函数，使得外部能直接清除内部的计数器
+
