@@ -373,26 +373,7 @@ xhr.send('a=1&b=2')
 
 什么是继承，一个类继承另一个类的属性和方法，在JS中至少要完成2次原型链的搜索
 
-ES5 写法
-
-```angular2
-function Human(name){
-     this.name = name
-}
-Human.prototype.run = function(){
-     console.log("我叫"+this.name+"，我在跑")
-}
-function Man(name){
-     Human.call(this, name)
-     this.gender = '男'
-}
-var f = function(){}
-f.prototype = Human.prototype
-Man.prototype = new f()
-Man.prototype.fight = function(){
-     console.log('糊你熊脸')
-}
-```
+[戳戳戳，5种继承方案](https://www.yuyunzhi.com/js-inherit/)
 
 ES6 写法
 
