@@ -1,5 +1,5 @@
 ---
-title: JavaScript 6种继承方式
+title: JavaScript 5种继承方式
 date: 2020-01-06T13:00:23+08:00
 tags: ["JavaScript"]
 categories: [JavaScript]
@@ -76,4 +76,108 @@ console.log(s1)
 - 只能继承父类的实例属性和方法，不能继承原型属性和方法
 - 无法实现函数复用，每个子类都有父类实例函数的副本，影响性能
 
+## 3、原型链+借用构造函数的组合继承
 
+```angular2
+function Person(name, age) {
+            this.name = name,
+            this.age = age,
+            this.setAge = function () { }
+        }
+        Person.prototype.setAge = function () {
+            console.log("111")
+        }
+        function Student(name, age, price) {
+            Person.call(this,name,age)
+            this.price = price
+            this.setScore = function () { }
+        }
+        Student.prototype = new Person()
+        Student.prototype.constructor = Student//组合继承也是需要修复构造函数指向的
+        Student.prototype.sayHello = function () { }
+        var s1 = new Student('Tom', 20, 15000)
+        var s2 = new Student('Jack', 22, 14000)
+        console.log(s1)
+        console.log(s1.constructor) //Student
+```
+
+优点：
+
+- 可以继承实例属性/方法，也可以继承原型属性/方法
+- 不存在引用属性共享问题
+- 可传参
+- 函数可复用
+
+缺点：
+
+- 调用了两次父类构造函数，生成了两份实例
+
+
+## 4、组合继承优化
+
+借助原型可以基于已有的对象来创建对象，var B = Object.create(A)以A对象为原型，生成了B对象。B继承了A的所有属性和方法。
+
+```angular2
+function Person(name, age) {
+        this.name = name,
+        this.age = age
+}
+
+Person.prototype.setAge = function () {
+    console.log("111")
+}
+
+function Student(name, age, price) {
+    Person.call(this, name, age)
+    this.price = price
+    this.setScore = function () {}
+}
+
+Student.prototype = Object.create(Person.prototype)//核心代码
+Student.prototype.constructor = Student//核心代码
+var s1 = new Student('Tom', 20, 15000)
+console.log(s1 instanceof Student, s1 instanceof Person) // true true
+console.log(s1.constructor) //Student
+console.log(s1)
+
+```
+
+同样的，Student继承了所有的Person原型对象的属性和方法。目前来说，最完美的继承方法
+
+## 5、ES6中class 的继承
+
+需要注意的是，class关键字只是原型的语法糖，JavaScript继承仍然是基于原型实现的
+
+```angular2
+class Person {
+    //调用类的构造方法
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+    }
+    //定义一般的方法
+    showName() {
+        console.log("调用父类的方法")
+        console.log(this.name, this.age);
+    }
+}
+
+let p1 = new  Person('kobe', 39)
+console.log(p1)
+
+//定义一个子类
+class Student extends Person {
+    constructor(name, age, salary) {
+        super(name, age)//通过super调用父类的构造方法
+        this.salary = salary
+    }
+    showName() {//在子类自身定义方法
+        console.log("调用子类的方法")
+        console.log(this.name, this.age, this.salary);
+    }
+}
+
+let s1 = new Student('wade', 38, 1000000000)
+console.log(s1)
+s1.showName()
+```

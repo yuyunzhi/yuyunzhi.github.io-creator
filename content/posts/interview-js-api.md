@@ -20,6 +20,7 @@ typeof {} // object
 typeof null // object
 typeof undefined // undefined
 typeof true // boolean
+typeof Object // function
 ```
 
 ### 2、typeof null 
