@@ -154,6 +154,38 @@ arr[3]();
 典型的闭包，弹出 5 。
 
 
+## 6、下面的输出结果是 ？
+
+```angular2
+(function() {
+
+    setTimeout(() => {
+        console.log(0);
+    });
+
+    new Promise(resolve => {
+        console.log(1);
+
+        setTimeout(() => {
+            resolve();
+            Promise.resolve().then(() => console.log(2));
+            console.log(3);
+        });
+
+        Promise.resolve().then(() => console.log(4));
+
+    }).then(() => {
+        console.log(5);
+        Promise.resolve().then(() => console.log(8)); //这句是多加的
+        setTimeout(() => console.log(6));
+    });
+
+    console.log(7);
+
+})();
+```
+
+1 7 4 0 3 5 2 8 6
 
 
 
