@@ -594,38 +594,50 @@ function fib (n) {
 
 # 十二、函数防抖
 
-基本思路就是把多个事件合并为一个事件：this 指向 、event 对象 、 返回值
+
+用在input中，一段时间内只触发一次，在一段时间内又触发那么时间就重新计算。函数防抖就是法师发技能的时候要读条，技能读条没完再按技能就会重新读条。
 
 ```angular2
-const debounce = (fn, time = 1000, options = {
-    immediate: true,
-    context: null
-}) => {
-
-    let timer;
-    const _debounce = function (...args) {
-        if (timer) {
+   debounce(fn,time=300,options={
+      leading:true,
+      context:null,
+    }){
+      let timer;
+      const _debounce = (...args)=>{
+          if(timer){
             clearTimeout(timer)
-        }
-        if (options.immediate) {
-            timer = setTimeout(null, time)
-            fn.apply(options.context, args)
-        }else{
-            timer = setTimeout(() => {
-                fn.apply(options.context, args)
-                timer = null
-            }, time)
-        }
-    };
-    _debounce.cancel = function () {
+          }
+
+          if(options.leading && !timer){
+            timer = setTimeout(null,time)
+            fn.apply(options.context,args)
+          }else{
+            timer = setTimeout(()=>{
+              fn.apply(options.context,args)
+              timer = null
+            },time)
+
+          }
+      }
+
+      _debounce.cancel = ()=>{
         clearTimeout(timer)
         timer = null
+      }
+
+      return _debounce
     }
-    return _debounce
-}
 ```
 
-使用方式
+leading 为是否在进入时立即执行一次，同时通过闭包向外暴露了一个 cancel 函数，使得外部能直接清除内部的计数器
+
+应用场景：
+
+- search搜索，用户在不断输入值时，用防抖来节约请求资源
+- window触发resize的时候，不断的调整浏览器窗口大小会不断的触发这个事件，用防抖来让其只触发一次
+
+
+使用方式：
 
 ```angular2
 function handler() {
@@ -637,53 +649,55 @@ button.onclick =  debouncedFunc.cancel
 window.addEventListener('scroll', debouncedFn)
 ```
 
-# 十四、实现Object.assign
+# 十四、节流函数
 
-- 先判断是否是oject，不是的话就返回
-- 获取所有参数并且转化为数组
-- 遍历该数组[{},{}],再遍历每个对象的key，把key和value赋值给target
-- 最后返回target
+可以用在click中，持续的点击，只根据设定的时间稳定的间隔触发事件。
 
-实现代码
 
 ```angular2
-    // 函数版本
-    function assign (target) {
-        // 验证第一个参数是否为object
-        if (typeof target !== 'object' || target == null) {
-            return Object(target);
+   throttle(fn,time=1000,options={
+      leading:true,
+      context:null
+    }){
+      let time
+      let previous = new Date(0).getTime()
+      const _throttle = (...args)=>{
+        let now = new Date().getTime()
+        if(!options.leading){
+          if(timer) return
+          timer = setTimeout(()=>{
+              fn.apply(options.context,args)
+              timer = null
+          },time)
+        }else if(now - previous > time){
+          fn.apply(options.context,args)
+          previous = now
         }
-        // arguments转为数组
-        let copyList = Array.prototype.slice.call(arguments, 1);
-        let len = copyList.length;
-        // 循环复制多个对象的属性
-        for (let i = 0; i < len; i++) {
-            let item = copyList[i];
-            // 获取当前对象的属性
-            for (let key in item) {
-                // 判断属性是否在对象本身上
-                if (item.hasOwnProperty(key)) {
-                    // 复制给目标对象
-                    target[key] = item[key]
-                }
-            }
-        }
-        // 返回目标对象
-        return target;
-    }
+      }
+      _throttle.cancel = ()=>{
+        previous = 0
+        clearTimeout(timer)
+        timer = null
+      }
+
+      return _throttle
+    },
 ```
 
-使用方式
+应用场景：
+
+- 鼠标不断点击触发，mousedown(单位时间内只触发一次)
+- 监听滚动事件，比如是否滑到底部自动加载更多，用throttle来判断
+
+使用方法：
 
 ```angular2
-    // 验证assign代码
-    var target = { firstname: 'target', age: 20 };
-    var source = { lastname: 'source', age: 21 };
-    const newtarget = assign(target, source);
-    // target与newtarget指向同一个内存地址
-    console.log(target); // {firstname: "target", age: 21, lastname: "source"}
-    console.log(newtarget); // {firstname: "target", age: 21, lastname: "source"}
-    console.log(newtarget === target); // true
+    let throttleAjax = throttle(ajax, 1000)
+
+    let inputc = document.getElementById('throttle')
+    inputc.addEventListener('keyup', function(e) {
+        throttleAjax(e.target.value)
+    })
 ```
 
 # 十五、实现call
@@ -756,41 +770,51 @@ curriedAdd(5，6)(7)(8)
 curriedAdd(5，6，7，8)
 ```
 
-# 十七、防抖
+# 十七、实现Object.assign
 
-用在input中，一段时间内只触发一次，在一段时间内又触发那么时间就重新计算。函数防抖就是法师发技能的时候要读条，技能读条没完再按技能就会重新读条。
+- 先判断是否是oject，不是的话就返回
+- 获取所有参数并且转化为数组
+- 遍历该数组[{},{}],再遍历每个对象的key，把key和value赋值给target
+- 最后返回target
+
+实现代码
 
 ```angular2
-   debounce(fn,time=300,options={
-      leading:true,
-      context:null,
-    }){
-      let timer;
-      const _debounce = (...args)=>{
-          if(timer){
-            clearTimeout(timer)
-          }
-
-          if(options.leading && !timer){
-            timer = setTimeout(null,time)
-            fn.apply(options.context,args)
-          }else{
-            timer = setTimeout(()=>{
-              fn.apply(options.context,args)
-              timer = null
-            },time)
-
-          }
-      }
-
-      _debounce.cancel = ()=>{
-        clearTimeout(timer)
-        timer = null
-      }
-
-      return _debounce
+    // 函数版本
+    function assign (target) {
+        // 验证第一个参数是否为object
+        if (typeof target !== 'object' || target == null) {
+            return Object(target);
+        }
+        // arguments转为数组
+        let copyList = Array.prototype.slice.call(arguments, 1);
+        let len = copyList.length;
+        // 循环复制多个对象的属性
+        for (let i = 0; i < len; i++) {
+            let item = copyList[i];
+            // 获取当前对象的属性
+            for (let key in item) {
+                // 判断属性是否在对象本身上
+                if (item.hasOwnProperty(key)) {
+                    // 复制给目标对象
+                    target[key] = item[key]
+                }
+            }
+        }
+        // 返回目标对象
+        return target;
     }
 ```
 
-leading 为是否在进入时立即执行一次，同时通过闭包向外暴露了一个 cancel 函数，使得外部能直接清除内部的计数器
+使用方式
 
+```angular2
+    // 验证assign代码
+    var target = { firstname: 'target', age: 20 };
+    var source = { lastname: 'source', age: 21 };
+    const newtarget = assign(target, source);
+    // target与newtarget指向同一个内存地址
+    console.log(target); // {firstname: "target", age: 21, lastname: "source"}
+    console.log(newtarget); // {firstname: "target", age: 21, lastname: "source"}
+    console.log(newtarget === target); // true
+```
