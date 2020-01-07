@@ -390,8 +390,14 @@ ps：super 关键字指代父类的实例，即父类的 this 对象。在子类
 
 [戳戳戳](https://juejin.im/post/5d99b56f518825222b5b6737)
 
+## 14、翻转一个字符串
 
+先将字符串转成一个数组，然后用数组的 reverse() + join() 方法。
 
+```angular2
+let a = "hello word";
+let b = [...str].reverse().join(""); // drow olleh
+```
 
 
 
