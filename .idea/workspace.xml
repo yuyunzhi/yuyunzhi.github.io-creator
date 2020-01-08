@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ae5092e-eedf-4391-bb83-322692a5ccf2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/content/posts/interview-es6.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/content/posts/interview-js.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/interview-js.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/interview-es6.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/interview-es6.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public" beforeDir="false" afterPath="$PROJECT_DIR$/public" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/LeaveIt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/LeaveIt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/LeaveIt/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/LeaveIt/assets/js/main.js" afterDir="false" />
@@ -24,8 +23,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="303">
-                <caret line="392" column="13" lean-forward="true" selection-start-line="392" selection-start-column="13" selection-end-line="392" selection-end-column="13" />
+              <first_editor relative-caret-position="9016">
+                <caret line="392" column="13" selection-start-line="392" selection-start-column="13" selection-end-line="392" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -36,8 +35,8 @@
         <entry file="file://$PROJECT_DIR$/content/posts/interview-es6.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="299">
-                <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <first_editor relative-caret-position="577">
+                <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
               </first_editor>
               <second_editor />
             </state>
@@ -59,11 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/mixin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
+            <state relative-caret-position="3933">
               <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -84,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/content/posts/interview-js-api.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="271">
+              <first_editor relative-caret-position="8740">
                 <caret line="380" column="7" selection-start-line="380" selection-start-column="7" selection-end-line="380" selection-end-column="7" />
               </first_editor>
               <second_editor />
@@ -97,7 +93,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="161">
-                <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+                <caret line="7" selection-start-line="7" selection-end-line="7" />
               </first_editor>
               <second_editor />
             </state>
@@ -236,8 +232,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="648" />
-    <option name="y" value="23" />
+    <option name="x" value="1714" />
+    <option name="y" value="43" />
     <option name="width" value="1624" />
     <option name="height" value="1027" />
   </component>
@@ -385,12 +381,13 @@
       <workItem from="1575359928537" duration="12667000" />
       <workItem from="1575521078193" duration="1050000" />
       <workItem from="1577947043460" duration="31826000" />
-      <workItem from="1578277650880" duration="15880000" />
+      <workItem from="1578277650880" duration="16733000" />
+      <workItem from="1578481747526" duration="286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="293406000" />
+    <option name="totallyTimeSpent" value="294545000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -402,13 +399,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="648" y="23" width="1624" height="1027" extended-state="0" />
+    <frame x="1714" y="43" width="1624" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19089207" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19089207" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.25561497" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.25561497" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50062346" side_tool="true" weight="0.2930481" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32916147" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -742,6 +739,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/js-es6.md" />
+    <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="9016">
+            <caret line="392" column="13" selection-start-line="392" selection-start-column="13" selection-end-line="392" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/interview-html.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret selection-end-line="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/mixin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3933">
+          <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/interview-js-console.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -752,17 +777,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/mixin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="173" column="13" selection-start-line="173" selection-start-column="13" selection-end-line="173" selection-end-column="13" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/content/posts/interview-js-api.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="8740">
+            <caret line="380" column="7" selection-start-line="380" selection-start-column="7" selection-end-line="380" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/js-jquery.md">
+    <entry file="file://$PROJECT_DIR$/content/posts/js-cross-domain.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="161">
+            <caret line="7" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/js-closure.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor>
@@ -782,17 +817,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/interview-js-api.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="271">
-            <caret line="380" column="7" selection-start-line="380" selection-start-column="7" selection-end-line="380" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/js-closure.md">
+    <entry file="file://$PROJECT_DIR$/content/posts/js-jquery.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor>
@@ -802,51 +827,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/js-es6.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="115">
-            <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/js-cross-domain.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="161">
-            <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="303">
-            <caret line="392" column="13" lean-forward="true" selection-start-line="392" selection-start-column="13" selection-end-line="392" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/interview-html.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor>
-            <caret selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/interview-es6.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="299">
-            <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <first_editor relative-caret-position="577">
+            <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
           </first_editor>
           <second_editor />
         </state>
