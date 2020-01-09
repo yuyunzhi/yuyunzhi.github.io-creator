@@ -142,3 +142,74 @@ funA(3，3) // 6 因为 a 是 3, b 是 3
 ```angular2
 const { SourceMapConsumer, SourceNode } = require("source-map");
 ```
+
+## 3、模板字符串
+
+所有模板字符串的空格和换行，都是被保留的
+
+```angular2
+console.log(`输出值为 N, 
+
+换行`)
+// "输出值为 N
+
+换行"
+```
+
+模板字符串中嵌入变量，需要将变量名写在 ${ } 之中
+
+```angular2
+let x = 1;
+let y = 2;
+
+console.log(`输出值为：${x}`) // "输出值为：1"
+console.log(`输出值为：${x + y}`) // "输出值为：3"
+```
+
+模板字符串之中还能调用函数
+```angular2
+function fn() {
+  return "Hello World";
+}
+
+console.log(`输出值为：${fn()}`) // "输出值为：Hello World"
+```
+
+## 4、 字符串函数扩展
+
+includes()：返回布尔值，表示是否找到了参数字符串。
+startsWith()：返回布尔值，表示参数字符串是否在原字符串的头部。
+endsWith()：返回布尔值，表示参数字符串是否在原字符串的尾部。
+
+```angular2
+let s = 'Hello world!';
+
+s.startsWith('Hello') // true
+s.endsWith('!') // true
+s.includes('o') // true
+```
+
+这三个方法都支持第二个参数，表示开始搜索的位置。
+
+```angular2
+let s = 'Hello world!';
+
+s.startsWith('world', 6) // true
+s.endsWith('Hello', 5) // true
+s.includes('Hello', 6) // false
+```
+
+## 5、数值扩展
+
+```angular2
+2 ** 2 // 4
+2 ** 3 // 8
+
+let a = 1.5;
+a **= 2;
+// 等同于 a = a * a;
+
+let b = 4;
+b **= 3;
+// 等同于 b = b * b * b;
+```

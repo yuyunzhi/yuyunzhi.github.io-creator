@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ae5092e-eedf-4391-bb83-322692a5ccf2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/content/posts/interview-es6.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/interview-es6.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public" beforeDir="false" afterPath="$PROJECT_DIR$/public" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/LeaveIt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/LeaveIt" afterDir="false" />
@@ -31,12 +30,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/posts/interview-es6.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="577">
-                <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+              <first_editor relative-caret-position="209">
+                <caret line="198" column="26" lean-forward="true" selection-start-line="198" selection-start-column="26" selection-end-line="198" selection-end-column="26" />
               </first_editor>
               <second_editor />
             </state>
@@ -64,12 +63,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content/posts/interview-js-console.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="184">
-                <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <first_editor relative-caret-position="3680">
+                <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
               </first_editor>
               <second_editor />
             </state>
@@ -232,8 +231,8 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1714" />
-    <option name="y" value="43" />
+    <option name="x" value="1968" />
+    <option name="y" value="173" />
     <option name="width" value="1624" />
     <option name="height" value="1027" />
   </component>
@@ -382,12 +381,12 @@
       <workItem from="1575521078193" duration="1050000" />
       <workItem from="1577947043460" duration="31826000" />
       <workItem from="1578277650880" duration="16733000" />
-      <workItem from="1578481747526" duration="286000" />
+      <workItem from="1578481747526" duration="2938000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294545000" />
+    <option name="totallyTimeSpent" value="297197000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,13 +398,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1714" y="43" width="1624" height="1027" extended-state="0" />
+    <frame x="1968" y="173" width="1624" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19089207" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19089207" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.25561497" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.25561497" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50062346" side_tool="true" weight="0.2930481" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32916147" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -767,16 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/interview-js-console.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="184">
-            <caret line="8" selection-start-line="8" selection-end-line="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/interview-js-api.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -830,8 +819,18 @@
     <entry file="file://$PROJECT_DIR$/content/posts/interview-es6.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="577">
-            <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
+          <first_editor relative-caret-position="209">
+            <caret line="198" column="26" lean-forward="true" selection-start-line="198" selection-start-column="26" selection-end-line="198" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/interview-js-console.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="3680">
+            <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
           </first_editor>
           <second_editor />
         </state>
