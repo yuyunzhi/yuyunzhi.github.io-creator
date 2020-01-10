@@ -800,3 +800,47 @@ curriedAdd(5，6，7，8)
     console.log(newtarget); // {firstname: "target", age: 21, lastname: "source"}
     console.log(newtarget === target); // true
 ```
+
+# 十八、实现REM
+
+```angular2
+// 原始配置
+function setRem () {
+  let doc = document.documentElement
+  let width = doc.getBoundingClientRect().width
+  let rem = width / 75
+  doc.style.fontSize = rem + 'px'
+}
+// 监听窗口变化
+addEventListener("resize", setRem)
+```
+
+# 十九、实现一个数据双向绑定
+
+```
+let obj = {}
+let input = document.getElementById('input')
+let span = document.getElementById('span')
+// 数据劫持
+Object.defineProperty(obj, 'text', {
+  configurable: true,
+  enumerable: true,
+  get() {
+    console.log('获取数据了')
+  },
+  set(newVal) {
+    console.log('数据更新了')
+    input.value = newVal
+    span.innerHTML = newVal
+  }
+})
+// 输入监听
+input.addEventListener('input', function(e) {
+  obj.text = e.target.value
+})
+
+```
+
+
+
+
