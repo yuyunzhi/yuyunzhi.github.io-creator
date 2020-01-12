@@ -209,3 +209,12 @@ Promise.resolve()
     console.error('fail2: ', e)
   })
 ```
+
+**10、链式调用的另外9道题目**
+
+[戳戳戳这里](https://juejin.im/post/5dfaf8f9e51d455830351e51)
+
+
+# 二、实现Promise
+
+![promise简易实现](/images/js/promise.png)
