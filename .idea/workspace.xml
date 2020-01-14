@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ae5092e-eedf-4391-bb83-322692a5ccf2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/interview-js-api.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/interview-js-api.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/interview-js.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/interview-js.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public" beforeDir="false" afterPath="$PROJECT_DIR$/public" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/LeaveIt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/LeaveIt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/LeaveIt/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/LeaveIt/assets/js/main.js" afterDir="false" />
@@ -19,18 +20,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/mixin.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-              <folding>
-                <element signature="e#116#5022#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/posts/interview-js-console.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -46,8 +35,20 @@
         <entry file="file://$PROJECT_DIR$/content/posts/interview-js-api.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="6350">
-                <caret line="824" column="10" lean-forward="true" selection-start-line="824" selection-start-column="10" selection-end-line="824" selection-end-column="10" />
+              <first_editor relative-caret-position="109">
+                <caret line="689" column="11" selection-start-line="689" selection-start-column="11" selection-end-line="689" selection-end-column="11" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1186">
+                <caret line="412" lean-forward="true" selection-start-line="412" selection-end-line="412" />
               </first_editor>
               <second_editor />
             </state>
@@ -216,11 +217,11 @@
         <option value="$PROJECT_DIR$/content/posts/js-inherit.md" />
         <option value="$PROJECT_DIR$/content/posts/js-cross-domain.md" />
         <option value="$PROJECT_DIR$/content/posts/js-es6.md" />
-        <option value="$PROJECT_DIR$/content/posts/interview-js.md" />
         <option value="$PROJECT_DIR$/content/posts/interview-es6.md" />
-        <option value="$PROJECT_DIR$/content/posts/interview-js-api.md" />
         <option value="$PROJECT_DIR$/static/js/promise.js" />
         <option value="$PROJECT_DIR$/content/posts/js-promise.md" />
+        <option value="$PROJECT_DIR$/content/posts/interview-js.md" />
+        <option value="$PROJECT_DIR$/content/posts/interview-js-api.md" />
       </list>
     </option>
   </component>
@@ -230,8 +231,8 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="52" />
     <option name="y" value="23" />
     <option name="width" value="1632" />
     <option name="height" value="1027" />
@@ -242,7 +243,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,6 +254,12 @@
               <item name="yuyunzhi.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="yuyunzhi.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuyunzhi.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuyunzhi.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="posts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yuyunzhi.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -283,6 +289,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,11 +388,12 @@
       <workItem from="1578742983113" duration="80000" />
       <workItem from="1578806429711" duration="6782000" />
       <workItem from="1578881161771" duration="638000" />
+      <workItem from="1578918838475" duration="736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307111000" />
+    <option name="totallyTimeSpent" value="307847000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -397,12 +405,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="23" width="1624" height="1027" extended-state="6" />
+    <frame x="52" y="23" width="1632" height="1027" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19089207" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19056487" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.25561497" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.25561497" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50062346" side_tool="true" weight="0.2930481" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32834226" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -718,16 +727,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/js-es6.md" />
-    <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="9016">
-            <caret line="392" column="13" selection-start-line="392" selection-start-column="13" selection-end-line="392" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/interview-es6.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -835,11 +834,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1186">
+            <caret line="412" lean-forward="true" selection-start-line="412" selection-end-line="412" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/content/posts/interview-js-api.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="6350">
-            <caret line="824" column="10" lean-forward="true" selection-start-line="824" selection-start-column="10" selection-end-line="824" selection-end-column="10" />
+          <first_editor relative-caret-position="109">
+            <caret line="689" column="11" selection-start-line="689" selection-start-column="11" selection-end-line="689" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>

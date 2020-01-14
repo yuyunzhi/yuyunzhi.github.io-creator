@@ -399,9 +399,21 @@ let a = "hello word";
 let b = [...str].reverse().join(""); // drow olleh
 ```
 
+## 15、null 和 undefined 的区别
 
+在原始类型中，有两个类型Null和Undefined，他们都有且仅有一个值，null和undefined，并且他们都代表无和空，我一般这样区分它们：
 
+**null**
 
+表示被赋值过的对象，刻意把一个对象赋值为null，故意表示其为空，不应有值。所以对象的某个属性值为null是正常的，null转换为数值时值为0。
+
+**undefined**
+
+表示“缺少值”，即此处应有一个值，但还没有定义，
+
+如果一个对象的某个属性值为undefined，这是不正常的，如obj.name=undefined，我们不应该这样写，应该直接delete obj.name。
+
+undefined转为数值时为NaN(非数字值的特殊值)
 
 
 
