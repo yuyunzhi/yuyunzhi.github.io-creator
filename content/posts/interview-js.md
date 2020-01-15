@@ -415,8 +415,71 @@ let b = [...str].reverse().join(""); // drow olleh
 
 undefined转为数值时为NaN(非数字值的特殊值)
 
+## 16、值传递和引用传递
 
+值传递
 
+```angular2
+let name = 'xxxx';
+function changeValue(name){
+  name = 'code秘密花园';
+}
+changeValue(name);
+console.log(name); // xxxx
+```
 
+引用传递
+
+```angular2
+let obj = {name:'xxx'};
+function changeValue(obj){
+  obj.name = 'code秘密花园';
+}
+changeValue(obj);
+console.log(obj.name); // code秘密花园
+```
+
+当函数参数是引用类型时，我们同样将参数复制了一个副本到局部变量，只不过复制的这个副本是指向堆内存中的地址而已，我们在函数内部对对象的属性进行操作，实际上和外部变量指向堆内存中的值相同，但是这并不代表着引用传递。
+
+```angular2
+let obj = {};
+function changeValue(obj){
+  obj.name = 'ConardLi';
+  obj = {name:'code秘密花园'};
+}
+changeValue(obj);
+console.log(obj.name); // ConardLi
+```
+
+## 17、Symbol特性
+
+**独一无二**
+
+```angular2
+var sym1 = Symbol();  // Symbol() 
+var sym2 = Symbol('ConardLi');  // Symbol(ConardLi)
+var sym3 = Symbol('ConardLi');  // Symbol(ConardLi)
+var sym4 = Symbol({name:'ConardLi'}); // Symbol([object Object])
+console.log(sym2 === sym3);  // false
+```
+
+如果我们想创造两个相等的Symbol变量，可以使用Symbol.for(key)。使用给定的key搜索现有的symbol，如果找到则返回该symbol。否则将使用给定的key在全局symbol注册表中创建一个新的symbol。
+
+```angular2
+var sym1 = Symbol.for('ConardLi');
+var sym2 = Symbol.for('ConardLi');
+console.log(sym1 === sym2); // true
+```
+
+**原始类型**
+
+```angular2
+typeof Symbol() === 'symbol'
+typeof Symbol('ConardLi') === 'symbol'
+```
+
+## 18、0.1+0.2 为什么 不等于0.3
+
+因为0.1和0.2会先转化成二进制无限小数，而JS存储无限小数使用64位固定长度来表示导致精度丢失。
 
 
