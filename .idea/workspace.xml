@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ae5092e-eedf-4391-bb83-322692a5ccf2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/js/2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/js/3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/interview-js-api.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/interview-js-api.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/posts/interview-js.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/posts/interview-js.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public" beforeDir="false" afterPath="$PROJECT_DIR$/public" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/interview-js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/interview-js/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/ajax/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/ajax/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/ajax/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/ajax/index.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/LeaveIt" beforeDir="false" afterPath="$PROJECT_DIR$/themes/LeaveIt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/LeaveIt/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/themes/LeaveIt/assets/js/main.js" afterDir="false" />
     </list>
@@ -36,24 +34,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content/posts/interview-js-api.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="-2046">
-                <caret line="689" column="11" selection-start-line="689" selection-start-column="11" selection-end-line="689" selection-end-column="11" />
+              <first_editor relative-caret-position="600">
+                <caret line="875" column="1" selection-start-line="875" selection-start-column="1" selection-end-line="875" selection-end-column="1" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="485">
-                <caret line="484" lean-forward="true" selection-start-line="484" selection-end-line="484" />
+              <first_editor relative-caret-position="370">
+                <caret line="520" column="11" lean-forward="true" selection-start-line="520" selection-start-column="11" selection-end-line="520" selection-end-column="11" />
               </first_editor>
               <second_editor />
             </state>
@@ -225,8 +223,8 @@
         <option value="$PROJECT_DIR$/content/posts/interview-es6.md" />
         <option value="$PROJECT_DIR$/static/js/promise.js" />
         <option value="$PROJECT_DIR$/content/posts/js-promise.md" />
-        <option value="$PROJECT_DIR$/content/posts/interview-js-api.md" />
         <option value="$PROJECT_DIR$/content/posts/interview-js.md" />
+        <option value="$PROJECT_DIR$/content/posts/interview-js-api.md" />
       </list>
     </option>
   </component>
@@ -306,19 +304,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static/algorithm" />
-      <recent name="$PROJECT_DIR$/static/resume" />
-      <recent name="$PROJECT_DIR$/static/article" />
-      <recent name="$PROJECT_DIR$/content/posts" />
-      <recent name="$PROJECT_DIR$/content" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/images/js" />
       <recent name="$PROJECT_DIR$/static/js" />
       <recent name="$PROJECT_DIR$/static/algorithm" />
       <recent name="$PROJECT_DIR$/content/posts" />
       <recent name="$PROJECT_DIR$/static/article" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/algorithm" />
+      <recent name="$PROJECT_DIR$/static/resume" />
+      <recent name="$PROJECT_DIR$/static/article" />
+      <recent name="$PROJECT_DIR$/content/posts" />
+      <recent name="$PROJECT_DIR$/content" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -393,12 +391,12 @@
       <workItem from="1578742983113" duration="80000" />
       <workItem from="1578806429711" duration="6782000" />
       <workItem from="1578881161771" duration="638000" />
-      <workItem from="1578918838475" duration="3101000" />
+      <workItem from="1578918838475" duration="5864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="310212000" />
+    <option name="totallyTimeSpent" value="312975000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -414,9 +412,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.19056487" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19056487" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.25561497" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49937657" visible="true" weight="0.25561497" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50062346" side_tool="true" weight="0.2930481" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32834226" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -839,21 +837,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/interview-js-api.md">
+    <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-2046">
-            <caret line="689" column="11" selection-start-line="689" selection-start-column="11" selection-end-line="689" selection-end-column="11" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="370">
+            <caret line="520" column="11" lean-forward="true" selection-start-line="520" selection-start-column="11" selection-end-line="520" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/posts/interview-js.md">
+    <entry file="file://$PROJECT_DIR$/content/posts/interview-js-api.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="485">
-            <caret line="484" lean-forward="true" selection-start-line="484" selection-end-line="484" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="600">
+            <caret line="875" column="1" selection-start-line="875" selection-start-column="1" selection-end-line="875" selection-end-column="1" />
           </first_editor>
           <second_editor />
         </state>

@@ -44,6 +44,7 @@ Object.prototype.toString.call(undefined) // "[object Undefined]"
 Object.prototype.toString.call(Symbol(2)) // "[object Symbol]"
 ```
 
+![图片来自 ConardLi](/images/js/3.png)
 因此，实现一个函数来具体判断一个变量的类型：
 
 ```angular2
@@ -818,7 +819,7 @@ addEventListener("resize", setRem)
 
 # 十九、实现一个数据双向绑定
 
-```
+```angular2
 let obj = {}
 let input = document.getElementById('input')
 let span = document.getElementById('span')
@@ -842,6 +843,36 @@ input.addEventListener('input', function(e) {
 
 ```
 
+# 二十、实现Object.create()
 
+new Object() 通过构造函数来创建对象, 添加的属性是在自身实例下。
+Object.create() es6创建对象的另一种方式，可以理解为继承一个对象, 添加的属性是在原型下。
 
+用法：
+
+```angular2
+// new Object() 方式创建
+var a = {  rep : 'apple' }
+var b = new Object(a)
+console.log(b) // {rep: "apple"}
+console.log(b.__proto__) // {}
+console.log(b.rep) // {rep: "apple"}
+
+// Object.create() 方式创建
+var a = { rep: 'apple' }
+var b = Object.create(a)
+console.log(b)  // {}
+console.log(b.__proto__) // {rep: "apple"}
+console.log(b.rep) // {rep: "apple"}
+```
+
+实现原理：
+
+```angular2
+function create(obj) {
+  function F() {}
+  F.prototype = obj
+  return new F()
+}
+```
 
