@@ -876,3 +876,53 @@ function create(obj) {
 }
 ```
 
+# 二十一、实现New操作符
+
+逻辑原理：
+- 创建一个空对象obj
+- 创建好的新对象obj原型指向构造函数的prototype
+- 执行构造函数，其中定义的属性和方法被绑定到this指向的对象中
+- 如果构造函数中没有返回其它对象，最终返回this，即当前对象，否则，返回构造函数中返回的对象。
+
+**方法一**
+
+使用方式：
+
+```
+function Person(name, age, job) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+        this.sayName = function () {
+            alert(this.name);
+        };
+}
+
+let p1 = New(Person,"Ysir",24,"stu");
+
+```
+
+实现原理：
+
+```
+const new = function(fn, ...args){
+    let obj = {}
+    obj.__proto__ = fn.prototype
+
+    let res = fn.apply(obj, args)
+    
+    return res instanceof Object ? res : obj;
+}
+```
+
+**方法二**
+
+实现原理：
+
+```
+const new = function(fn, ...args){
+    let obj = Object.create(fn.prototype)
+    let res = fn.apply(obj, args)
+    return res instanceof Object ? res : obj;
+}
+```
