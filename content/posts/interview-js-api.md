@@ -888,7 +888,7 @@ function create(obj) {
 
 使用方式：
 
-```
+```angular2
 function Person(name, age, job) {
         this.name = name;
         this.age = age;
@@ -904,7 +904,7 @@ let p1 = New(Person,"Ysir",24,"stu");
 
 实现原理：
 
-```
+```angular2
 const new = function(fn, ...args){
     let obj = {}
     obj.__proto__ = fn.prototype
@@ -919,10 +919,59 @@ const new = function(fn, ...args){
 
 实现原理：
 
-```
+```angular2
 const new = function(fn, ...args){
     let obj = Object.create(fn.prototype)
     let res = fn.apply(obj, args)
     return res instanceof Object ? res : obj;
+}
+```
+
+# 二十二、伪数组转化为真数组的5种方法
+
+
+```angular2
+const array = Array.prototype.slice.call(arguments)
+const array = [].prototype.slice.call(arguments)
+const array = Array.from(arguments)
+const array = [...arguments];
+const array = Array.prototype.concat.apply([], arguments)
+//第5种 for循环
+```
+
+# 二十三、JS中flat---数组扁平化
+
+我们需要将多层级数组转化为一级数组（即提取嵌套数组元素最终合并为一个数组），使其内容合并且展开。那么该如何去实现呢？
+
+```angular2
+let ary = [1, [2, [3, [4, 5]]], 6];// -> [1, 2, 3, 4, 5, 6]
+let str = JSON.stringify(ary);
+```
+
+1、ES6 flat
+
+```angular2
+ary = ary.flat(Infinity);
+```
+
+2、replace + split
+
+```angular2
+ary = str.replace(/(\[|\])/g, '').split(',')
+```
+
+3、递归
+
+```angular2
+let result = [];
+let fn = function(ary) {
+  for(let i = 0; i < ary.length; i++) {
+    let item = ary[i];
+    if (Array.isArray(ary[i])){
+      fn(item);
+    } else {
+      result.push(item);
+    }
+  }
 }
 ```
