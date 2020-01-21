@@ -524,3 +524,38 @@ const a = {
    valueOf: function () {return this.value.pop(); },
 }
 ```
+
+## 20、setTimeout、Promise、Async/Await 的区别
+
+- setTimeout宏任务，会在微任务执行完根据队列先进先出的方式依次执行
+- Promise本身是同步的立即执行函数，到执行了reslove或者 reject才是异步属于微任务。
+- async 函数返回一个promise，当执行到await就会返回跳出async函数体。await 后面的代码属于微任务。
+
+## 21、ES5/ES6 的继承除了写法以外还有什么区别？
+
+问题是继承的差异。
+
+```angular2
+class Super {}
+class Sub extends Super {}
+
+const sub = new Sub();
+
+Sub.__proto__ === Super;
+```
+
+子类可以直接通过 __proto__ 寻址到父类。
+
+```angular2
+function Super() {}
+function Sub() {}
+
+Sub.prototype = new Super();
+Sub.prototype.constructor = Sub;
+
+var sub = new Sub();
+
+Sub.__proto__ === Function.prototype;
+```
+
+而通过 ES5 的方式，Sub.__proto__ === Function.prototype

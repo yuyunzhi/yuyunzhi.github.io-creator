@@ -398,6 +398,11 @@ class Man extends Human{
 }
 ```
 
+如果Man里也有run()方法，那么let man1 = new Man() 后，man1.run()执行的是子类的方法，而man1.__proto__.run()执行的事父类的方法。
+
+man1 instanceof Man // true
+man1 instanceof Human // true
+
 # 六、Promise如何使用
 
 then
@@ -929,13 +934,11 @@ const new = function(fn, ...args){
 
 # 二十二、伪数组转化为真数组的5种方法
 
-
 ```angular2
 const array = Array.prototype.slice.call(arguments)
 const array = [].prototype.slice.call(arguments)
 const array = Array.from(arguments)
 const array = [...arguments];
-const array = Array.prototype.concat.apply([], arguments)
 //第5种 for循环
 ```
 
@@ -975,3 +978,38 @@ let fn = function(ary) {
   }
 }
 ```
+
+# 二十四、JSON.stringfiy()
+
+
+JSON.parse/JSON.stringify还是有很多局限性，大致如下
+
+- 会忽略 undefined
+- 会忽略 Symbol
+- 无法序列化function，也会忽略
+- 无法解决循环引用，会报错
+- 深层对象转换爆栈
+
+直接上代码验证
+
+```angular2
+// 声明一个包含undefined、null、symbol、function的对象
+var oldObj = {
+  name: "old",
+  age: undefined,
+  sex: Symbol("setter"),
+  title: function() {},
+  lastName: null
+};
+var newObj = JSON.parse(JSON.stringify(oldObj));
+// 可以看到会忽略undefined、symbol、function的对象
+console.log(newObj); // {name: "old", lastName: null}
+
+var firstObj = {
+  name: "firstObj"
+};
+firstObj.newKey = firstObj;
+// Converting circular structure to JSON
+var newFirstObj = JSON.parse(JSON.stringify(firstObj));
+```
+
