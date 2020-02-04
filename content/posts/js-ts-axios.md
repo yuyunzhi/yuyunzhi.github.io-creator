@@ -22,7 +22,7 @@ tags: ["TypeScript"]
 1、需要有nodejs环境
 
 2、安装TypeScript
-;
+
 ```angular2
 sudo npm install -g typescript
 ```
