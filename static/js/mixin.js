@@ -15,7 +15,6 @@ const mixin = {
     // 手机号中间四位*
     encryptMobile(mobile) {
       if (!mobile) return '—'
-
       return mobile.substring(0, 3) + '****' + mobile.substring(7)
     },
 
@@ -226,7 +225,57 @@ const mixin = {
       }
 
       return _debounce
-    }
+    },
+    /**
+     * 滚动条事件
+     * @param {*} callback 回调函数
+     * @param {*} orientation 滚动方位（TOP, BOTTOM：默认）
+     */
+    handleScroll (event, callback, orientation) {
+      orientation = orientation || 'BOTTOM'
+      const target = event.target
+
+      // 滚动条的总高度
+      const scrollHeight = target.scrollHeight
+      // 可视区的高度
+      const clientHeight = target.clientHeight
+      // 距离顶部的距离
+      const scrollTop = target.scrollTop
+
+      // 滚动到顶部
+      if (orientation === 'TOP' && scrollTop === 0) {
+        callback()
+      }
+
+      // 滚动到底部
+      if (
+          orientation === 'BOTTOM' &&
+          scrollTop + clientHeight + 100 >= scrollHeight
+      ) {
+        callback()
+      }
+
+      event.preventDefault()
+    },
+
+    /**
+     * 设置滚动跳的位置
+     * @param {*} el 需要滚动的目标元素
+     * @param {*} value 滚动值
+     */
+    setScrollTop (el, value) {
+      el.scrollTop = value
+    },
+
+    /**
+     * 滚动到底部
+     * @param {*} el 需要滚动的目标元素
+     */
+    scrollToBottom (el) {
+      const value = el.scrollHeight
+
+      this.setScrollTop(el, value)
+    },
   }
 }
 

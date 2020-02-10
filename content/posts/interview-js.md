@@ -559,3 +559,15 @@ Sub.__proto__ === Function.prototype;
 ```
 
 而通过 ES5 的方式，Sub.__proto__ === Function.prototype
+
+## 22、说一下XSRF？
+
+XSRF 又名 CSRF，跨站请求伪造，它是前端常见的一种攻击方式。
+
+![XSRF](/images/js/xsrf.png)
+原理：A登录了信任的网站B，B给A返回了cookie。在A没有退出B网站时去访问了C网站(攻击者网站)，C带着A的cookie去访问了B网站的服务器。
+
+解决方案：
+
+- referer:验证请求的 referer，但是 referer 也是可以伪造的
+- 使用token，前后端协调好cookieName和tokenName。从返回的cookie中拿到token，再在header上加token，服务端根据token来验证token
