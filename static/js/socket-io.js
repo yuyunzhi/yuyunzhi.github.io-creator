@@ -47,8 +47,8 @@ SocketIOClient.prototype.receive = function (store) {
 
     socket.on('notification', ({ payload }) => {
         if (!payload) return
-
-        store.dispatch('updateSocketData', payload)
+        // 前端传到storage
+       // store.dispatch('updateSocketData', payload)
     })
 }
 
