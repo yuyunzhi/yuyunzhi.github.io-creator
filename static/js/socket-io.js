@@ -47,9 +47,15 @@ SocketIOClient.prototype.receive = function (store) {
 
     socket.on('notification', ({ payload }) => {
         if (!payload) return
-        // 前端传到storage
+        // 前端传到storage 后监听某一个数据变化
        // store.dispatch('updateSocketData', payload)
     })
 }
 
 export default SocketIOClient
+
+
+// 使用方式
+// const socket = new SocketIO(process.env.REACT_APP_SOCKET_DOMAIN, userInfo.userId, accessToken)
+// socket.openConnect()
+// socket.receive(socketStore)
