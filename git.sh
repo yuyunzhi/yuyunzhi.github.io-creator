@@ -18,6 +18,7 @@ echo "对public文件进行推送github---------------------------------"
 
 # 对public文件进行推送github
 cd /Users/yuyunzhi/Desktop/yuyunzhi.github.io/public
+git remote add origin https://github.com/yuyunzhi/yuyunzhi.github.io.git
 git status
 git add .
 git commit -m "$a"
